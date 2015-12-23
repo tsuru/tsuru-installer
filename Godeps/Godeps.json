@@ -1,0 +1,5 @@
+{
+	"ImportPath": "github.com/andrewsmedina/yati",
+	"GoVersion": "go1.5",
+	"Deps": []
+}
