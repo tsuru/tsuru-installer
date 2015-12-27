@@ -5,6 +5,8 @@
 package main
 
 import (
+	"github.com/docker/machine/commands/mcndirs"
+	"github.com/docker/machine/libmachine"
 	"github.com/tsuru/tsuru/cmd"
 	"launchpad.net/gnuflag"
 )
@@ -20,6 +22,13 @@ func (c *install) Info() *cmd.Info {
 		Desc:    "",
 		MinArgs: 0,
 	}
+}
+
+func create() {
+	api := libmachine.NewClient(mcndirs.GetBaseDir())
+	driverName := "virtualbox"
+	driver, _ := api.NewPluginDriver(driverName, nil)
+	driver.Create()
 }
 
 func (c *install) Run(context *cmd.Context, client *cmd.Client) error {
