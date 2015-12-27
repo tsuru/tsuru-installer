@@ -1,5 +1,139 @@
 {
 	"ImportPath": "github.com/andrewsmedina/yati",
 	"GoVersion": "go1.5",
-	"Deps": []
+	"Packages": [
+		"./..."
+	],
+	"Deps": [
+		{
+			"ImportPath": "github.com/bugsnag/bugsnag-go",
+			"Comment": "v1.0.5-19-g02e9528",
+			"Rev": "02e952891c52fbcb15f113d90633897355783b6e"
+		},
+		{
+			"ImportPath": "github.com/bugsnag/osext",
+			"Rev": "0dd3f918b21bec95ace9dc86c7e70266cfc5c702"
+		},
+		{
+			"ImportPath": "github.com/bugsnag/panicwrap",
+			"Rev": "e5f9854865b9778a45169fc249e99e338d4d6f27"
+		},
+		{
+			"ImportPath": "github.com/docker/docker/pkg/term",
+			"Comment": "v1.5.0",
+			"Rev": "a8a31eff10544860d2188dddabdee4d727545796"
+		},
+		{
+			"ImportPath": "github.com/docker/docker/pkg/units",
+			"Comment": "v1.5.0",
+			"Rev": "a8a31eff10544860d2188dddabdee4d727545796"
+		},
+		{
+			"ImportPath": "github.com/docker/machine/commands/mcndirs",
+			"Comment": "v0.5.4-106-gc80906a",
+			"Rev": "c80906a5437b500331d6b9c9dc4c31b7a2728e28"
+		},
+		{
+			"ImportPath": "github.com/docker/machine/drivers/errdriver",
+			"Comment": "v0.5.4-106-gc80906a",
+			"Rev": "c80906a5437b500331d6b9c9dc4c31b7a2728e28"
+		},
+		{
+			"ImportPath": "github.com/docker/machine/drivers/none",
+			"Comment": "v0.5.4-106-gc80906a",
+			"Rev": "c80906a5437b500331d6b9c9dc4c31b7a2728e28"
+		},
+		{
+			"ImportPath": "github.com/docker/machine/libmachine",
+			"Comment": "v0.5.4-106-gc80906a",
+			"Rev": "c80906a5437b500331d6b9c9dc4c31b7a2728e28"
+		},
+		{
+			"ImportPath": "github.com/docker/machine/version",
+			"Comment": "v0.5.4-106-gc80906a",
+			"Rev": "c80906a5437b500331d6b9c9dc4c31b7a2728e28"
+		},
+		{
+			"ImportPath": "github.com/howeyc/fsnotify",
+			"Comment": "v0.8.13",
+			"Rev": "5102fde921d31f59c6e45d835aa01f0213aade0f"
+		},
+		{
+			"ImportPath": "github.com/sajari/fuzzy",
+			"Rev": "bbbcac964e38148a7b43491a83d83b6b584600dc"
+		},
+		{
+			"ImportPath": "github.com/samalba/dockerclient",
+			"Rev": "82381805d3533c97cec74e1cc79b00ef45774571"
+		},
+		{
+			"ImportPath": "github.com/tsuru/config",
+			"Rev": "a4028d4efbb92032346e9ecc8859678d2148644a"
+		},
+		{
+			"ImportPath": "github.com/tsuru/tsuru/cmd",
+			"Comment": "0.13.0-rc6-59-g1a2ced4",
+			"Rev": "1a2ced4279542d6c667fb97a68532bdb8f52a1e2"
+		},
+		{
+			"ImportPath": "github.com/tsuru/tsuru/errors",
+			"Comment": "0.13.0-rc6-59-g1a2ced4",
+			"Rev": "1a2ced4279542d6c667fb97a68532bdb8f52a1e2"
+		},
+		{
+			"ImportPath": "github.com/tsuru/tsuru/exec",
+			"Comment": "0.13.0-rc6-59-g1a2ced4",
+			"Rev": "1a2ced4279542d6c667fb97a68532bdb8f52a1e2"
+		},
+		{
+			"ImportPath": "github.com/tsuru/tsuru/fs",
+			"Comment": "0.13.0-rc6-59-g1a2ced4",
+			"Rev": "1a2ced4279542d6c667fb97a68532bdb8f52a1e2"
+		},
+		{
+			"ImportPath": "github.com/tsuru/tsuru/git",
+			"Comment": "0.13.0-rc6-59-g1a2ced4",
+			"Rev": "1a2ced4279542d6c667fb97a68532bdb8f52a1e2"
+		},
+		{
+			"ImportPath": "github.com/tsuru/tsuru/io",
+			"Comment": "0.13.0-rc6-59-g1a2ced4",
+			"Rev": "1a2ced4279542d6c667fb97a68532bdb8f52a1e2"
+		},
+		{
+			"ImportPath": "github.com/tsuru/tsuru/log",
+			"Comment": "0.13.0-rc6-59-g1a2ced4",
+			"Rev": "1a2ced4279542d6c667fb97a68532bdb8f52a1e2"
+		},
+		{
+			"ImportPath": "github.com/tsuru/tsuru/net",
+			"Comment": "0.13.0-rc6-59-g1a2ced4",
+			"Rev": "1a2ced4279542d6c667fb97a68532bdb8f52a1e2"
+		},
+		{
+			"ImportPath": "golang.org/x/crypto/curve25519",
+			"Rev": "beef0f4390813b96e8e68fd78570396d0f4751fc"
+		},
+		{
+			"ImportPath": "golang.org/x/crypto/ssh",
+			"Rev": "beef0f4390813b96e8e68fd78570396d0f4751fc"
+		},
+		{
+			"ImportPath": "golang.org/x/net/websocket",
+			"Rev": "4f2fc6c1e69d41baf187332ee08fbd2b296f21ed"
+		},
+		{
+			"ImportPath": "gopkg.in/check.v1",
+			"Rev": "64131543e7896d5bcc6bd5a76287eb75ea96c673"
+		},
+		{
+			"ImportPath": "gopkg.in/yaml.v1",
+			"Rev": "4914593b9558e85597f08346c798aea8f6fb899f"
+		},
+		{
+			"ImportPath": "launchpad.net/gnuflag",
+			"Comment": "14",
+			"Rev": "roger.peppe@canonical.com-20121003093437-zcyyw0lpvj2nifpk"
+		}
+	]
 }
