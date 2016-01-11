@@ -7,11 +7,7 @@ go:
 env:
   global:
     - GO15VENDOREXPERIMENT=1
-  matrix:
-    - GOARCH=amd64
-    - GOARCH=386
-script:
-  - go test -x ./tsuru
+script: go test -x ./tsuru
 matrix:
   allow_failures:
     - go: tip
