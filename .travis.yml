@@ -7,7 +7,9 @@ go:
 env:
   global:
     - GO15VENDOREXPERIMENT=1
-script: go test -x ./tsuru
+script:
+    - go clean ./...
+    - go test ./...
 matrix:
   allow_failures:
     - go: tip
