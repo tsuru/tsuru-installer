@@ -977,8 +977,8 @@
 		},
 		{
 			"path": "gopkg.in/mgo.v2",
-			"revision": "dc255bb679efa273b6544a03261c4053505498a4",
-			"revisionTime": "2014-07-30T17:00:37-03:00"
+			"revision": "e30de8ac9ae3b30df7065f766c71f88bba7d4e49",
+			"revisionTime": "2015-12-07T00:15:13-02:00"
 		},
 		{
 			"path": "gopkg.in/mgo.v2/bson",
