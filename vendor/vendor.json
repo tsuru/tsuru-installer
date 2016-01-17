@@ -622,6 +622,11 @@
 			"revisionTime": "2015-12-24T16:55:42+01:00"
 		},
 		{
+			"path": "github.com/stretchr/objx",
+			"revision": "1a9d0bb9f541897e62256577b352fdbc1fb4fd94",
+			"revisionTime": "2015-09-28T13:21:52+01:00"
+		},
+		{
 			"path": "github.com/stretchr/testify/assert",
 			"revision": "e4ec8152c15fc46bd5056ce65997a07c7d415325",
 			"revisionTime": "2015-02-18T14:18:46-08:00"
