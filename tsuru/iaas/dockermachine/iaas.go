@@ -6,6 +6,10 @@ import (
 	"github.com/docker/machine/libmachine"
 )
 
+func init() {
+	iaas.Register("docker-machine", &dmIaas{})
+}
+
 type dmIaas struct{}
 
 func (i *dmIaas) CreateMachine(params map[string]string) (*iaas.Machine, error) {
@@ -19,4 +23,3 @@ func (i *dmIaas) CreateMachine(params map[string]string) (*iaas.Machine, error) 
 func (i *dmIaas) DeleteMachine(m *iaas.Machine) error {
 	return nil
 }
-
