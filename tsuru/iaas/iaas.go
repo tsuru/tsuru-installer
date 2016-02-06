@@ -1,5 +1,11 @@
 package iaas
 
+var iaasProviders = make(map[string]Iaas)
+
+func Register(name string, provider Iaas) {
+	iaasProviders[name] = provider
+}
+
 type Machine struct {
 	Id             string
 	Iaas           string
@@ -9,7 +15,7 @@ type Machine struct {
 	CreationParams map[string]string
 }
 
-type IaaS interface {
+type Iaas interface {
 	CreateMachine(params map[string]string) (*Machine, error)
 	DeleteMachine(m *Machine) error
 }
