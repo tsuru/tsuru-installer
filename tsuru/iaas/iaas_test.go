@@ -24,7 +24,6 @@ func (i *iaasTest) DeleteMachine(m *Machine) error {
 
 func (s *S) TestRegister(c *check.C) {
 	Register("abc", &iaasTest{})
-	provider, ok := iaasProviders["abc"]
-	c.Assert(ok, check.Equals, true)
+	provider := Get("abc")
 	c.Assert(provider, check.FitsTypeOf, &iaasTest{})
 }

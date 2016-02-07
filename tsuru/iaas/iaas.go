@@ -6,6 +6,10 @@ func Register(name string, provider Iaas) {
 	iaasProviders[name] = provider
 }
 
+func Get(name string) Iaas {
+	return iaasProviders[name]
+}
+
 type Machine struct {
 	Id             string
 	Iaas           string
