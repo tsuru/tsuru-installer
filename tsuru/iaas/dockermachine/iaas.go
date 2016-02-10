@@ -13,6 +13,7 @@ func init() {
 type dmIaas struct{}
 
 func (i *dmIaas) CreateMachine(params map[string]string) (*iaas.Machine, error) {
+	cmd := "docker-machine create tsuru -d virtualbox"
 	api := libmachine.NewClient(mcndirs.GetBaseDir())
 	driverName := "virtualbox"
 	driver, _ := api.NewPluginDriver(driverName, nil)
