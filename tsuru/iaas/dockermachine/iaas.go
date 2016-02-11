@@ -4,8 +4,6 @@ import (
 	"os/exec"
 
 	"github.com/andrewsmedina/yati/tsuru/iaas"
-	"github.com/docker/machine/commands/mcndirs"
-	"github.com/docker/machine/libmachine"
 )
 
 func init() {
