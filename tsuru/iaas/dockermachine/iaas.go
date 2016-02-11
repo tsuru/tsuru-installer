@@ -1,6 +1,8 @@
 package dockermachine
 
 import (
+	"os/exec"
+
 	"github.com/andrewsmedina/yati/tsuru/iaas"
 	"github.com/docker/machine/commands/mcndirs"
 	"github.com/docker/machine/libmachine"
@@ -13,11 +15,11 @@ func init() {
 type dmIaas struct{}
 
 func (i *dmIaas) CreateMachine(params map[string]string) (*iaas.Machine, error) {
-	cmd := "docker-machine create tsuru -d virtualbox"
-	api := libmachine.NewClient(mcndirs.GetBaseDir())
-	driverName := "virtualbox"
-	driver, _ := api.NewPluginDriver(driverName, nil)
-	driver.Create()
+	cmd := exec.Command("docker-machine", "create", "tsuru", "-d", "virtualbox")
+	err := cmd.Run()
+	if err != nil {
+		return nil, err
+	}
 	return &iaas.Machine{}, nil
 }
 
