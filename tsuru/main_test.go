@@ -18,3 +18,9 @@ func (s *S) TestCommandsFromBaseManagerAreRegistered(c *check.C) {
 		c.Assert(command, check.FitsTypeOf, instance)
 	}
 }
+func (s *S) TestInstallIsRegistered(c *check.C) {
+	manager := buildManager("tsuru")
+	install, ok := manager.Commands["install"]
+	c.Assert(ok, check.Equals, true)
+	c.Assert(install, check.FitsTypeOf, &install{})
+}

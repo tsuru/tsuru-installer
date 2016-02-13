@@ -20,5 +20,6 @@ func buildManager(name string) *cmd.Manager {
 func main() {
 	name := cmd.ExtractProgramName(os.Args[0])
 	manager := buildManager(name)
+	manager.Register(&install{})
 	manager.Run(os.Args[1:])
 }
