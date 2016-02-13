@@ -23,6 +23,11 @@ func (i *dmIaas) getIP() (string, error) {
 	return string(output), err
 }
 
+func (i *dmIaas) deleteMachine() error {
+	cmd := exec.Command("docker-machine", "rm", "tsuru")
+	return cmd.Run()
+}
+
 func (i *dmIaas) CreateMachine(params map[string]string) (*iaas.Machine, error) {
 	err := i.createMachine()
 	if err != nil {
@@ -36,5 +41,5 @@ func (i *dmIaas) CreateMachine(params map[string]string) (*iaas.Machine, error) 
 }
 
 func (i *dmIaas) DeleteMachine(m *iaas.Machine) error {
-	return nil
+	return i.deleteMachine()
 }
