@@ -35,3 +35,26 @@ func (c *install) Run(context *cmd.Context, client *cmd.Client) error {
 	fmt.Printf("Machine %s successfully created!", m.Address)
 	return nil
 }
+
+type uninstall struct {
+	fs *gnuflag.FlagSet
+}
+
+func (c *uninstall) Info() *cmd.Info {
+	return &cmd.Info{
+		Name:    "uninstall",
+		Usage:   "uninstall",
+		Desc:    "",
+		MinArgs: 0,
+	}
+}
+
+func (c *uninstall) Run(context *cmd.Context, client *cmd.Client) error {
+	i := iaas.Get("docker-machine")
+	err := i.DeleteMachine(&iaas.Machine{})
+	if err != nil {
+		return err
+	}
+	fmt.Println("Machine successfully removed!")
+	return nil
+}

@@ -27,3 +27,19 @@ func (s *S) TestInstall(c *check.C) {
 	command.Run(&context, client)
 	c.Assert(stdout.String(), check.Equals, "")
 }
+
+func (s *S) TestUninstallInfo(c *check.C) {
+	c.Assert((&uninstall{}).Info(), check.NotNil)
+}
+
+func (s *S) TestUninstall(c *check.C) {
+	var stdout, stderr bytes.Buffer
+	context := cmd.Context{
+		Stdout: &stdout,
+		Stderr: &stderr,
+	}
+	client := cmd.NewClient(&http.Client{}, nil, manager)
+	command := uninstall{}
+	command.Run(&context, client)
+	c.Assert(stdout.String(), check.Equals, "")
+}
