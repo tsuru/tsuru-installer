@@ -21,5 +21,6 @@ func main() {
 	name := cmd.ExtractProgramName(os.Args[0])
 	manager := buildManager(name)
 	manager.Register(&install{})
+	manager.Register(&uninstall{})
 	manager.Run(os.Args[1:])
 }
