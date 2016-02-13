@@ -24,7 +24,6 @@ func (s *S) TestInstall(c *check.C) {
 	}
 	client := cmd.NewClient(&http.Client{}, nil, manager)
 	command := install{}
-	err := command.Run(&context, client)
-	c.Assert(err, check.IsNil)
+	command.Run(&context, client)
 	c.Assert(stdout.String(), check.Equals, "")
 }

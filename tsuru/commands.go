@@ -5,6 +5,10 @@
 package main
 
 import (
+	"fmt"
+
+	"github.com/andrewsmedina/yati/tsuru/iaas"
+	_ "github.com/andrewsmedina/yati/tsuru/iaas/dockermachine"
 	"github.com/tsuru/tsuru/cmd"
 	"launchpad.net/gnuflag"
 )
@@ -23,5 +27,11 @@ func (c *install) Info() *cmd.Info {
 }
 
 func (c *install) Run(context *cmd.Context, client *cmd.Client) error {
+	i := iaas.Get("docker-machine")
+	m, err := i.CreateMachine(nil)
+	if err != nil {
+		return err
+	}
+	fmt.Printf("Machine %s successfully created!", m.Address)
 	return nil
 }
