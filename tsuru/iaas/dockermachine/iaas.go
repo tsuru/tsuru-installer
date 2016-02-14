@@ -1,6 +1,7 @@
 package dockermachine
 
 import (
+	"os"
 	"os/exec"
 
 	"github.com/andrewsmedina/yati/tsuru/iaas"
@@ -14,6 +15,8 @@ type dmIaas struct{}
 
 func (i *dmIaas) createMachine() error {
 	cmd := exec.Command("docker-machine", "create", "tsuru", "-d", "virtualbox")
+	cmd.Stdout = os.Stdout
+	cmd.Stderr = os.Stderr
 	return cmd.Run()
 }
 
@@ -25,6 +28,8 @@ func (i *dmIaas) getIP() (string, error) {
 
 func (i *dmIaas) deleteMachine() error {
 	cmd := exec.Command("docker-machine", "rm", "tsuru", "-y")
+	cmd.Stdout = os.Stdout
+	cmd.Stderr = os.Stderr
 	return cmd.Run()
 }
 
