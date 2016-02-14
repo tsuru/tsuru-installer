@@ -27,9 +27,11 @@ func (c *install) Info() *cmd.Info {
 }
 
 func (c *install) Run(context *cmd.Context, client *cmd.Client) error {
+	fmt.Println("Creating machine")
 	i := iaas.Get("docker-machine")
 	m, err := i.CreateMachine(nil)
 	if err != nil {
+		fmt.Println("Error creating machine")
 		return err
 	}
 	fmt.Printf("Machine %s successfully created!\n", m.Address)
