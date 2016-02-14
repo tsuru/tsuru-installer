@@ -33,6 +33,13 @@ func (c *install) Run(context *cmd.Context, client *cmd.Client) error {
 		return err
 	}
 	fmt.Printf("Machine %s successfully created!", m.Address)
+	fmt.Println("Installing MongoDB")
+	err = createContainer(m.Address, "mongodb")
+	if err != nil {
+		fmt.Println("Error installing MongoDB!")
+		return err
+	}
+	fmt.Println("MongoDB successfully installed!")
 	return nil
 }
 
