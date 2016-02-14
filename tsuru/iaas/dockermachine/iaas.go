@@ -42,7 +42,13 @@ func (i *dmIaas) CreateMachine(params map[string]string) (*iaas.Machine, error) 
 	if err != nil {
 		return nil, err
 	}
-	return &iaas.Machine{Address: ip}, nil
+	config := map[string]string{}
+	m := iaas.Machine{
+		Address: ip,
+		Iaas:    "docker-machine",
+		Config:  config,
+	}
+	return &m, nil
 }
 
 func (i *dmIaas) DeleteMachine(m *iaas.Machine) error {

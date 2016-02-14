@@ -11,12 +11,9 @@ func Get(name string) Iaas {
 }
 
 type Machine struct {
-	Id             string
-	Iaas           string
-	Status         string
-	Address        string
-	Port           int
-	CreationParams map[string]string
+	Iaas    string
+	Address string
+	Config  map[string]string
 }
 
 type Iaas interface {
