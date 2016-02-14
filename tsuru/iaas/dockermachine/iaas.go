@@ -1,10 +1,13 @@
 package dockermachine
 
 import (
+	"encoding/json"
 	"os"
 	"os/exec"
 
 	"github.com/andrewsmedina/yati/tsuru/iaas"
+	"github.com/docker/machine/drivers/virtualbox"
+	"github.com/docker/machine/libmachine"
 )
 
 func init() {
@@ -14,10 +17,18 @@ func init() {
 type dmIaas struct{}
 
 func (i *dmIaas) createMachine() error {
-	cmd := exec.Command("docker-machine", "create", "tsuru", "-d", "virtualbox")
-	cmd.Stdout = os.Stdout
-	cmd.Stderr = os.Stderr
-	return cmd.Run()
+	client := libmachine.NewClient("/tmp/automatic", "/tmp/automatic/certs")
+	defer client.Close()
+	driver := virtualbox.NewDriver("tsuru", "/tmp/automatic")
+	data, err := json.Marshal(driver)
+	if err != nil {
+		return err
+	}
+	h, err := client.NewHost("virtualbox", data)
+	if err != nil {
+		return err
+	}
+	return client.Create(h)
 }
 
 func (i *dmIaas) getIP() (string, error) {
