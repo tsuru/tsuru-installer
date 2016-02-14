@@ -1,4 +1,4 @@
-// Copyright 2015 tsuru authors. All rights reserved.
+// Copyright 2016 tsuru authors. All rights reserved.
 // Use of this source code is governed by a BSD-style
 // license that can be found in the LICENSE file.
 
@@ -11,15 +11,16 @@ import (
 	"io"
 	"net/http"
 	"os"
+	"regexp"
 	"sort"
 	"strconv"
 	"strings"
 
 	"github.com/sajari/fuzzy"
+	"github.com/tsuru/gnuflag"
 	"github.com/tsuru/tsuru/errors"
 	"github.com/tsuru/tsuru/fs"
 	"github.com/tsuru/tsuru/net"
-	"launchpad.net/gnuflag"
 )
 
 var ErrAbortCommand = gerrors.New("")
@@ -447,6 +448,8 @@ func (c *help) Run(context *Context, client *Client) error {
 	return nil
 }
 
+var flagFormatRegexp = regexp.MustCompile(`(?m)^([^-\s])`)
+
 func (c *help) parseFlags(command Command) string {
 	var output string
 	if cmd, ok := command.(FlaggedCommand); ok {
@@ -455,7 +458,8 @@ func (c *help) parseFlags(command Command) string {
 		flagset.SetOutput(&buf)
 		flagset.PrintDefaults()
 		if buf.String() != "" {
-			output = fmt.Sprintf("Flags:\n\n%s", buf.String())
+			output = flagFormatRegexp.ReplaceAllString(buf.String(), `    $1`)
+			output = fmt.Sprintf("Flags:\n\n%s", output)
 		}
 	}
 	return strings.Replace(output, "\n", "\n  ", -1)

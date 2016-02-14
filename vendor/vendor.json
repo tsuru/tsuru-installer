@@ -170,8 +170,8 @@
 		},
 		{
 			"path": "github.com/docker/machine/libmachine",
-			"revision": "c80906a5437b500331d6b9c9dc4c31b7a2728e28",
-			"revisionTime": "2015-12-24T16:55:42+01:00"
+			"revision": "1eaf5a464f44066e57628218995c8b7d80c825cd",
+			"revisionTime": "2016-02-13T14:10:44-08:00"
 		},
 		{
 			"path": "github.com/docker/machine/libmachine/auth",
@@ -290,48 +290,48 @@
 		},
 		{
 			"path": "github.com/fsouza/go-dockerclient",
-			"revision": "2350d7bc12bb04f2d7d6824c7718012b1397b760",
-			"revisionTime": "2015-11-16T13:28:58-02:00"
+			"revision": "9184fe7a2d7c920b8cdd30faa64fe025f609ef20",
+			"revisionTime": "2016-02-13T15:21:03-02:00"
 		},
 		{
 			"path": "github.com/fsouza/go-dockerclient/external/github.com/Sirupsen/logrus",
-			"revision": "2350d7bc12bb04f2d7d6824c7718012b1397b760",
-			"revisionTime": "2015-11-16T13:28:58-02:00"
+			"revision": "9184fe7a2d7c920b8cdd30faa64fe025f609ef20",
+			"revisionTime": "2016-02-13T15:21:03-02:00"
 		},
 		{
 			"path": "github.com/fsouza/go-dockerclient/external/github.com/docker/docker/opts",
-			"revision": "2350d7bc12bb04f2d7d6824c7718012b1397b760",
-			"revisionTime": "2015-11-16T13:28:58-02:00"
+			"revision": "9184fe7a2d7c920b8cdd30faa64fe025f609ef20",
+			"revisionTime": "2016-02-13T15:21:03-02:00"
 		},
 		{
 			"path": "github.com/fsouza/go-dockerclient/external/github.com/docker/docker/pkg/archive",
-			"revision": "2350d7bc12bb04f2d7d6824c7718012b1397b760",
-			"revisionTime": "2015-11-16T13:28:58-02:00"
+			"revision": "9184fe7a2d7c920b8cdd30faa64fe025f609ef20",
+			"revisionTime": "2016-02-13T15:21:03-02:00"
 		},
 		{
 			"path": "github.com/fsouza/go-dockerclient/external/github.com/docker/docker/pkg/fileutils",
-			"revision": "2350d7bc12bb04f2d7d6824c7718012b1397b760",
-			"revisionTime": "2015-11-16T13:28:58-02:00"
+			"revision": "9184fe7a2d7c920b8cdd30faa64fe025f609ef20",
+			"revisionTime": "2016-02-13T15:21:03-02:00"
 		},
 		{
 			"path": "github.com/fsouza/go-dockerclient/external/github.com/docker/docker/pkg/homedir",
-			"revision": "2350d7bc12bb04f2d7d6824c7718012b1397b760",
-			"revisionTime": "2015-11-16T13:28:58-02:00"
+			"revision": "9184fe7a2d7c920b8cdd30faa64fe025f609ef20",
+			"revisionTime": "2016-02-13T15:21:03-02:00"
 		},
 		{
 			"path": "github.com/fsouza/go-dockerclient/external/github.com/docker/docker/pkg/idtools",
-			"revision": "2350d7bc12bb04f2d7d6824c7718012b1397b760",
-			"revisionTime": "2015-11-16T13:28:58-02:00"
+			"revision": "9184fe7a2d7c920b8cdd30faa64fe025f609ef20",
+			"revisionTime": "2016-02-13T15:21:03-02:00"
 		},
 		{
 			"path": "github.com/fsouza/go-dockerclient/external/github.com/docker/docker/pkg/ioutils",
-			"revision": "2350d7bc12bb04f2d7d6824c7718012b1397b760",
-			"revisionTime": "2015-11-16T13:28:58-02:00"
+			"revision": "9184fe7a2d7c920b8cdd30faa64fe025f609ef20",
+			"revisionTime": "2016-02-13T15:21:03-02:00"
 		},
 		{
 			"path": "github.com/fsouza/go-dockerclient/external/github.com/docker/docker/pkg/longpath",
-			"revision": "2350d7bc12bb04f2d7d6824c7718012b1397b760",
-			"revisionTime": "2015-11-16T13:28:58-02:00"
+			"revision": "9184fe7a2d7c920b8cdd30faa64fe025f609ef20",
+			"revisionTime": "2016-02-13T15:21:03-02:00"
 		},
 		{
 			"path": "github.com/fsouza/go-dockerclient/external/github.com/docker/docker/pkg/parsers",
@@ -340,23 +340,23 @@
 		},
 		{
 			"path": "github.com/fsouza/go-dockerclient/external/github.com/docker/docker/pkg/pools",
-			"revision": "2350d7bc12bb04f2d7d6824c7718012b1397b760",
-			"revisionTime": "2015-11-16T13:28:58-02:00"
+			"revision": "9184fe7a2d7c920b8cdd30faa64fe025f609ef20",
+			"revisionTime": "2016-02-13T15:21:03-02:00"
 		},
 		{
 			"path": "github.com/fsouza/go-dockerclient/external/github.com/docker/docker/pkg/promise",
-			"revision": "2350d7bc12bb04f2d7d6824c7718012b1397b760",
-			"revisionTime": "2015-11-16T13:28:58-02:00"
+			"revision": "9184fe7a2d7c920b8cdd30faa64fe025f609ef20",
+			"revisionTime": "2016-02-13T15:21:03-02:00"
 		},
 		{
 			"path": "github.com/fsouza/go-dockerclient/external/github.com/docker/docker/pkg/stdcopy",
-			"revision": "2350d7bc12bb04f2d7d6824c7718012b1397b760",
-			"revisionTime": "2015-11-16T13:28:58-02:00"
+			"revision": "9184fe7a2d7c920b8cdd30faa64fe025f609ef20",
+			"revisionTime": "2016-02-13T15:21:03-02:00"
 		},
 		{
 			"path": "github.com/fsouza/go-dockerclient/external/github.com/docker/docker/pkg/system",
-			"revision": "2350d7bc12bb04f2d7d6824c7718012b1397b760",
-			"revisionTime": "2015-11-16T13:28:58-02:00"
+			"revision": "9184fe7a2d7c920b8cdd30faa64fe025f609ef20",
+			"revisionTime": "2016-02-13T15:21:03-02:00"
 		},
 		{
 			"path": "github.com/fsouza/go-dockerclient/external/github.com/docker/docker/pkg/ulimit",
@@ -380,13 +380,13 @@
 		},
 		{
 			"path": "github.com/fsouza/go-dockerclient/external/github.com/hashicorp/go-cleanhttp",
-			"revision": "2350d7bc12bb04f2d7d6824c7718012b1397b760",
-			"revisionTime": "2015-11-16T13:28:58-02:00"
+			"revision": "9184fe7a2d7c920b8cdd30faa64fe025f609ef20",
+			"revisionTime": "2016-02-13T15:21:03-02:00"
 		},
 		{
 			"path": "github.com/fsouza/go-dockerclient/external/github.com/opencontainers/runc/libcontainer/user",
-			"revision": "2350d7bc12bb04f2d7d6824c7718012b1397b760",
-			"revisionTime": "2015-11-16T13:28:58-02:00"
+			"revision": "9184fe7a2d7c920b8cdd30faa64fe025f609ef20",
+			"revisionTime": "2016-02-13T15:21:03-02:00"
 		},
 		{
 			"path": "github.com/fsouza/go-dockerclient/testing",
@@ -643,8 +643,8 @@
 		},
 		{
 			"path": "github.com/tsuru/config",
-			"revision": "a4028d4efbb92032346e9ecc8859678d2148644a",
-			"revisionTime": "2015-12-07T18:09:50-02:00"
+			"revision": "5db6f20a3d2a7e3b584de051af56bc2df2f80c6e",
+			"revisionTime": "2016-02-04T00:31:09-02:00"
 		},
 		{
 			"path": "github.com/tsuru/docker-cluster/cluster",
@@ -733,8 +733,8 @@
 		},
 		{
 			"path": "github.com/tsuru/tsuru/cmd",
-			"revision": "1a2ced4279542d6c667fb97a68532bdb8f52a1e2",
-			"revisionTime": "2015-12-15T14:52:15-02:00"
+			"revision": "e0e6e86e417165a44059835218dd74f0c08d4234",
+			"revisionTime": "2016-02-12T21:39:08-02:00"
 		},
 		{
 			"path": "github.com/tsuru/tsuru/db",
@@ -748,23 +748,23 @@
 		},
 		{
 			"path": "github.com/tsuru/tsuru/errors",
-			"revision": "1a2ced4279542d6c667fb97a68532bdb8f52a1e2",
-			"revisionTime": "2015-12-15T14:52:15-02:00"
+			"revision": "e0e6e86e417165a44059835218dd74f0c08d4234",
+			"revisionTime": "2016-02-12T21:39:08-02:00"
 		},
 		{
 			"path": "github.com/tsuru/tsuru/exec",
-			"revision": "1a2ced4279542d6c667fb97a68532bdb8f52a1e2",
-			"revisionTime": "2015-12-15T14:52:15-02:00"
+			"revision": "e0e6e86e417165a44059835218dd74f0c08d4234",
+			"revisionTime": "2016-02-12T21:39:08-02:00"
 		},
 		{
 			"path": "github.com/tsuru/tsuru/fs",
-			"revision": "1a2ced4279542d6c667fb97a68532bdb8f52a1e2",
-			"revisionTime": "2015-12-15T14:52:15-02:00"
+			"revision": "e0e6e86e417165a44059835218dd74f0c08d4234",
+			"revisionTime": "2016-02-12T21:39:08-02:00"
 		},
 		{
 			"path": "github.com/tsuru/tsuru/git",
-			"revision": "1a2ced4279542d6c667fb97a68532bdb8f52a1e2",
-			"revisionTime": "2015-12-15T14:52:15-02:00"
+			"revision": "e0e6e86e417165a44059835218dd74f0c08d4234",
+			"revisionTime": "2016-02-12T21:39:08-02:00"
 		},
 		{
 			"path": "github.com/tsuru/tsuru/hc",
@@ -793,13 +793,13 @@
 		},
 		{
 			"path": "github.com/tsuru/tsuru/io",
-			"revision": "1a2ced4279542d6c667fb97a68532bdb8f52a1e2",
-			"revisionTime": "2015-12-15T14:52:15-02:00"
+			"revision": "e0e6e86e417165a44059835218dd74f0c08d4234",
+			"revisionTime": "2016-02-12T21:39:08-02:00"
 		},
 		{
 			"path": "github.com/tsuru/tsuru/log",
-			"revision": "1a2ced4279542d6c667fb97a68532bdb8f52a1e2",
-			"revisionTime": "2015-12-15T14:52:15-02:00"
+			"revision": "e0e6e86e417165a44059835218dd74f0c08d4234",
+			"revisionTime": "2016-02-12T21:39:08-02:00"
 		},
 		{
 			"path": "github.com/tsuru/tsuru/migration",
@@ -808,8 +808,8 @@
 		},
 		{
 			"path": "github.com/tsuru/tsuru/net",
-			"revision": "1a2ced4279542d6c667fb97a68532bdb8f52a1e2",
-			"revisionTime": "2015-12-15T14:52:15-02:00"
+			"revision": "e0e6e86e417165a44059835218dd74f0c08d4234",
+			"revisionTime": "2016-02-12T21:39:08-02:00"
 		},
 		{
 			"path": "github.com/tsuru/tsuru/permission",
@@ -936,8 +936,8 @@
 		{
 			"origin": "github.com/andrewsmedina/yati/vendor/golang.org/x/crypto/ssh/terminal",
 			"path": "golang.org/x/crypto/ssh/terminal",
-			"revision": "c80906a5437b500331d6b9c9dc4c31b7a2728e28",
-			"revisionTime": "2015-12-24T16:55:42+01:00"
+			"revision": "beef0f4390813b96e8e68fd78570396d0f4751fc",
+			"revisionTime": "2015-11-15T11:40:09-08:00"
 		},
 		{
 			"path": "golang.org/x/net/context",

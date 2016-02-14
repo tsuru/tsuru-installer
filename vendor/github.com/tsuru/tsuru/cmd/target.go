@@ -1,4 +1,4 @@
-// Copyright 2015 tsuru authors. All rights reserved.
+// Copyright 2016 tsuru authors. All rights reserved.
 // Use of this source code is governed by a BSD-style
 // license that can be found in the LICENSE file.
 
@@ -15,7 +15,7 @@ import (
 	"strings"
 	"syscall"
 
-	"launchpad.net/gnuflag"
+	"github.com/tsuru/gnuflag"
 )
 
 var errUndefinedTarget = errors.New(`No target defined. Please use target-add/target-set to define a target.
@@ -119,7 +119,7 @@ func deleteTargetFile() {
 	filesystem().Remove(JoinWithUserDir(".tsuru", "target"))
 }
 
-func GetURL(path string) (string, error) {
+func GetURLVersion(version, path string) (string, error) {
 	var prefix string
 	target, err := ReadTarget()
 	if err != nil {
@@ -128,7 +128,11 @@ func GetURL(path string) (string, error) {
 	if m, _ := regexp.MatchString("^https?://", target); !m {
 		prefix = "http://"
 	}
-	return prefix + strings.TrimRight(target, "/") + path, nil
+	return prefix + strings.TrimRight(target, "/") + "/" + version + path, nil
+}
+
+func GetURL(path string) (string, error) {
+	return GetURLVersion("1.0", path)
 }
 
 func writeTarget(t string) error {
