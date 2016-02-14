@@ -986,6 +986,11 @@
 			"revisionTime": "2014-07-30T17:00:37-03:00"
 		},
 		{
+			"path": "gopkg.in/mgo.v2/internal/sasl",
+			"revision": "e30de8ac9ae3b30df7065f766c71f88bba7d4e49",
+			"revisionTime": "2015-12-07T00:15:13-02:00"
+		},
+		{
 			"path": "gopkg.in/mgo.v2/internal/scram",
 			"revision": "e30de8ac9ae3b30df7065f766c71f88bba7d4e49",
 			"revisionTime": "2015-12-07T00:15:13-02:00"
