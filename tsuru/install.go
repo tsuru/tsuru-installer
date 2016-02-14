@@ -5,13 +5,11 @@
 package main
 
 import (
-	"fmt"
-
 	"github.com/fsouza/go-dockerclient"
 )
 
 func createContainer(address, image string) error {
-	endpoint := fmt.Sprintf("tcp://%s", address)
+	endpoint := "tcp://192.168.99.100:2376"
 	client, err := docker.NewClient(endpoint)
 	if err != nil {
 		return err
