@@ -24,7 +24,7 @@ func (i *dmIaas) getIP() (string, error) {
 }
 
 func (i *dmIaas) deleteMachine() error {
-	cmd := exec.Command("docker-machine", "rm", "tsuru")
+	cmd := exec.Command("docker-machine", "rm", "tsuru", "-y")
 	return cmd.Run()
 }
 
