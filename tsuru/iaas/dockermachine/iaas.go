@@ -7,7 +7,6 @@ import (
 	"github.com/andrewsmedina/yati/tsuru/iaas"
 	"github.com/docker/machine/drivers/virtualbox"
 	"github.com/docker/machine/libmachine"
-	"github.com/docker/machine/libmachine/host"
 )
 
 func init() {
@@ -16,26 +15,19 @@ func init() {
 
 type dmIaas struct{}
 
-func (i *dmIaas) createMachine() (*host.Host, error) {
+func (i *dmIaas) CreateMachine(params map[string]string) (*iaas.Machine, error) {
 	client := libmachine.NewClient("/tmp/automatic", "/tmp/automatic/certs")
+	defer client.Close()
 	driver := virtualbox.NewDriver("tsuru", "/tmp/automatic")
 	data, err := json.Marshal(driver)
 	if err != nil {
 		return nil, err
 	}
-	h, err := client.NewHost("virtualbox", data)
+	host, err := client.NewHost("virtualbox", data)
 	if err != nil {
 		return nil, err
 	}
-	err = client.Create(h)
-	return h, err
-}
-
-func (i *dmIaas) CreateMachine(params map[string]string) (*iaas.Machine, error) {
-	host, err := i.createMachine()
-	if err != nil {
-		return nil, err
-	}
+	err = client.Create(host)
 	config := map[string]string{}
 	ip, err := host.Driver.GetIP()
 	if err != nil {
