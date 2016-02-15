@@ -28,10 +28,15 @@ func (i *dmIaas) CreateMachine(params map[string]string) (*iaas.Machine, error) 
 		return nil, err
 	}
 	err = client.Create(host)
-	config := map[string]string{}
 	ip, err := host.Driver.GetIP()
 	if err != nil {
 		return nil, err
+	}
+	options := host.AuthOptions()
+	config := map[string]string{
+		"ca":   options.CaCertPath,
+		"cert": options.ClientCertPath,
+		"key":  options.ClientKeyPath,
 	}
 	m := iaas.Machine{
 		Address: fmt.Sprintf("https://%s:2376", ip),

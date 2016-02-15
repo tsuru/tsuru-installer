@@ -8,8 +8,8 @@ import (
 	"github.com/fsouza/go-dockerclient"
 )
 
-func createContainer(address, image string) error {
-	client, err := docker.NewClient(address)
+func createContainer(address, ca, cert, key, image string) error {
+	client, err := docker.NewTLSClient(address, cert, key, ca)
 	if err != nil {
 		return err
 	}
