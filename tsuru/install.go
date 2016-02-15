@@ -9,8 +9,7 @@ import (
 )
 
 func createContainer(address, image string) error {
-	endpoint := "tcp://192.168.99.100:2376"
-	client, err := docker.NewClient(endpoint)
+	client, err := docker.NewClient(address)
 	if err != nil {
 		return err
 	}
