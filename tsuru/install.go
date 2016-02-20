@@ -13,6 +13,13 @@ func createContainer(address, ca, cert, key, image string) error {
 	if err != nil {
 		return err
 	}
+	pullOpts := docker.PullImageOptions{
+		Repository: image,
+	}
+	err = client.PullImage(pullOpts, docker.AuthConfiguration{})
+	if err != nil {
+		return err
+	}
 	config := docker.Config{Image: image}
 	opts := docker.CreateContainerOptions{Config: &config}
 	container, err := client.CreateContainer(opts)
