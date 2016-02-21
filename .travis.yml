@@ -4,6 +4,7 @@ go:
   - 1.5.3
   - 1.6
   - tip
+install: true
 env:
   global:
     - GO15VENDOREXPERIMENT=1
