@@ -7,8 +7,8 @@ package main
 import (
 	"fmt"
 
-	"github.com/andrewsmedina/yati/tsuru/iaas"
-	_ "github.com/andrewsmedina/yati/tsuru/iaas/dockermachine"
+	"github.com/andrewsmedina/yati/tsuru-installer/iaas"
+	_ "github.com/andrewsmedina/yati/tsuru-installer/iaas/dockermachine"
 	"github.com/tsuru/gnuflag"
 	"github.com/tsuru/tsuru/cmd"
 )

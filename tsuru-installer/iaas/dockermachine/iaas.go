@@ -4,7 +4,7 @@ import (
 	"encoding/json"
 	"fmt"
 
-	"github.com/andrewsmedina/yati/tsuru/iaas"
+	"github.com/andrewsmedina/yati/tsuru-installer/iaas"
 	"github.com/docker/machine/drivers/virtualbox"
 	"github.com/docker/machine/libmachine"
 )
