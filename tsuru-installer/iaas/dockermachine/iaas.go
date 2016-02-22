@@ -4,9 +4,9 @@ import (
 	"encoding/json"
 	"fmt"
 
-	"github.com/andrewsmedina/yati/tsuru-installer/iaas"
 	"github.com/docker/machine/drivers/virtualbox"
 	"github.com/docker/machine/libmachine"
+	"github.com/tsuru/tsuru-installer/tsuru-installer/iaas"
 )
 
 func init() {

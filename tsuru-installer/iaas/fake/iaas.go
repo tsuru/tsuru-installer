@@ -1,7 +1,7 @@
 package fake
 
 import (
-	"github.com/andrewsmedina/yati/tsuru-installer/iaas"
+	"github.com/tsuru/tsuru-installer/tsuru-installer/iaas"
 )
 
 func init() {
