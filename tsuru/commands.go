@@ -9,8 +9,8 @@ import (
 
 	"github.com/andrewsmedina/yati/tsuru/iaas"
 	_ "github.com/andrewsmedina/yati/tsuru/iaas/dockermachine"
+	"github.com/tsuru/gnuflag"
 	"github.com/tsuru/tsuru/cmd"
-	"launchpad.net/gnuflag"
 )
 
 type install struct {

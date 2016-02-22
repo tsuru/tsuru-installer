@@ -1,942 +1,455 @@
 {
 	"comment": "",
-	"ignore": "",
+	"ignore": "test",
 	"package": [
 		{
 			"origin": "github.com/tsuru/tsuru/vendor/github.com/RobotsAndPencils/go-saml/util",
 			"path": "github.com/RobotsAndPencils/go-saml/util",
-			"revision": "e0e6e86e417165a44059835218dd74f0c08d4234",
-			"revisionTime": "2016-02-12T21:39:08-02:00"
-		},
-		{
-			"path": "github.com/Sirupsen/logrus",
-			"revision": "6ebb4e7b3c24b9fef150d7693e728cb1ebadf1f5",
-			"revisionTime": "2014-10-27T22:31:40+01:00"
-		},
-		{
-			"origin": "github.com/tsuru/tsuru/vendor/github.com/bradfitz/go-smtpd/smtpd",
-			"path": "github.com/bradfitz/go-smtpd/smtpd",
-			"revision": "e0e6e86e417165a44059835218dd74f0c08d4234",
-			"revisionTime": "2016-02-12T21:39:08-02:00"
-		},
-		{
-			"path": "github.com/coreos/go-systemd/dbus",
-			"revision": "415a79c4bfa377b484b16c632347b3925a0f35ff",
-			"revisionTime": "2014-11-17T19:38:09-08:00"
+			"revision": "711ad55b00f25d5b55d362a6ec808784f5044438",
+			"revisionTime": "2016-02-21T14:49:20-03:00"
 		},
 		{
 			"origin": "github.com/tsuru/tsuru/vendor/github.com/diego-araujo/go-saml",
 			"path": "github.com/diego-araujo/go-saml",
-			"revision": "e0e6e86e417165a44059835218dd74f0c08d4234",
-			"revisionTime": "2016-02-12T21:39:08-02:00"
+			"revision": "711ad55b00f25d5b55d362a6ec808784f5044438",
+			"revisionTime": "2016-02-21T14:49:20-03:00"
 		},
 		{
 			"origin": "github.com/tsuru/tsuru/vendor/github.com/diego-araujo/go-saml/util",
 			"path": "github.com/diego-araujo/go-saml/util",
-			"revision": "e0e6e86e417165a44059835218dd74f0c08d4234",
-			"revisionTime": "2016-02-12T21:39:08-02:00"
-		},
-		{
-			"path": "github.com/docker/distribution/digest",
-			"revision": "bf991fec01662fc14610365882d8bc142a6cbdd6",
-			"revisionTime": "2016-02-11T10:40:22-08:00"
-		},
-		{
-			"path": "github.com/docker/distribution/registry/api/errcode",
-			"revision": "bf991fec01662fc14610365882d8bc142a6cbdd6",
-			"revisionTime": "2016-02-11T10:40:22-08:00"
-		},
-		{
-			"path": "github.com/docker/docker/daemon/exec",
-			"revision": "590d5108bbdaabb05af590f76c9757daceb6d02e",
-			"revisionTime": "2016-01-15T00:55:58-05:00"
-		},
-		{
-			"path": "github.com/docker/docker/daemon/execdriver",
-			"revision": "590d5108bbdaabb05af590f76c9757daceb6d02e",
-			"revisionTime": "2016-01-15T00:55:58-05:00"
-		},
-		{
-			"path": "github.com/docker/docker/daemon/execdriver/native/template",
-			"revision": "590d5108bbdaabb05af590f76c9757daceb6d02e",
-			"revisionTime": "2016-01-15T00:55:58-05:00"
-		},
-		{
-			"path": "github.com/docker/docker/daemon/graphdriver",
-			"revision": "590d5108bbdaabb05af590f76c9757daceb6d02e",
-			"revisionTime": "2016-01-15T00:55:58-05:00"
-		},
-		{
-			"path": "github.com/docker/docker/daemon/graphdriver/graphtest",
-			"revision": "590d5108bbdaabb05af590f76c9757daceb6d02e",
-			"revisionTime": "2016-01-15T00:55:58-05:00"
-		},
-		{
-			"path": "github.com/docker/docker/daemon/graphdriver/vfs",
-			"revision": "590d5108bbdaabb05af590f76c9757daceb6d02e",
-			"revisionTime": "2016-01-15T00:55:58-05:00"
-		},
-		{
-			"path": "github.com/docker/docker/daemon/logger",
-			"revision": "590d5108bbdaabb05af590f76c9757daceb6d02e",
-			"revisionTime": "2016-01-15T00:55:58-05:00"
-		},
-		{
-			"path": "github.com/docker/docker/daemon/logger/jsonfilelog",
-			"revision": "590d5108bbdaabb05af590f76c9757daceb6d02e",
-			"revisionTime": "2016-01-15T00:55:58-05:00"
-		},
-		{
-			"path": "github.com/docker/docker/daemon/logger/loggerutils",
-			"revision": "590d5108bbdaabb05af590f76c9757daceb6d02e",
-			"revisionTime": "2016-01-15T00:55:58-05:00"
-		},
-		{
-			"path": "github.com/docker/docker/daemon/network",
-			"revision": "590d5108bbdaabb05af590f76c9757daceb6d02e",
-			"revisionTime": "2016-01-15T00:55:58-05:00"
-		},
-		{
-			"path": "github.com/docker/docker/dockerversion",
-			"revision": "590d5108bbdaabb05af590f76c9757daceb6d02e",
-			"revisionTime": "2016-01-15T00:55:58-05:00"
-		},
-		{
-			"path": "github.com/docker/docker/errors",
-			"revision": "590d5108bbdaabb05af590f76c9757daceb6d02e",
-			"revisionTime": "2016-01-15T00:55:58-05:00"
-		},
-		{
-			"path": "github.com/docker/docker/image",
-			"revision": "590d5108bbdaabb05af590f76c9757daceb6d02e",
-			"revisionTime": "2016-01-15T00:55:58-05:00"
-		},
-		{
-			"path": "github.com/docker/docker/layer",
-			"revision": "590d5108bbdaabb05af590f76c9757daceb6d02e",
-			"revisionTime": "2016-01-15T00:55:58-05:00"
-		},
-		{
-			"path": "github.com/docker/docker/opts",
-			"revision": "590d5108bbdaabb05af590f76c9757daceb6d02e",
-			"revisionTime": "2016-01-15T00:55:58-05:00"
-		},
-		{
-			"path": "github.com/docker/docker/pkg/archive",
-			"revision": "590d5108bbdaabb05af590f76c9757daceb6d02e",
-			"revisionTime": "2016-01-15T00:55:58-05:00"
-		},
-		{
-			"path": "github.com/docker/docker/pkg/broadcaster",
-			"revision": "590d5108bbdaabb05af590f76c9757daceb6d02e",
-			"revisionTime": "2016-01-15T00:55:58-05:00"
-		},
-		{
-			"path": "github.com/docker/docker/pkg/chrootarchive",
-			"revision": "590d5108bbdaabb05af590f76c9757daceb6d02e",
-			"revisionTime": "2016-01-15T00:55:58-05:00"
-		},
-		{
-			"path": "github.com/docker/docker/pkg/filenotify",
-			"revision": "590d5108bbdaabb05af590f76c9757daceb6d02e",
-			"revisionTime": "2016-01-15T00:55:58-05:00"
-		},
-		{
-			"path": "github.com/docker/docker/pkg/fileutils",
-			"revision": "590d5108bbdaabb05af590f76c9757daceb6d02e",
-			"revisionTime": "2016-01-15T00:55:58-05:00"
-		},
-		{
-			"path": "github.com/docker/docker/pkg/homedir",
-			"revision": "590d5108bbdaabb05af590f76c9757daceb6d02e",
-			"revisionTime": "2016-01-15T00:55:58-05:00"
-		},
-		{
-			"path": "github.com/docker/docker/pkg/idtools",
-			"revision": "590d5108bbdaabb05af590f76c9757daceb6d02e",
-			"revisionTime": "2016-01-15T00:55:58-05:00"
-		},
-		{
-			"path": "github.com/docker/docker/pkg/ioutils",
-			"revision": "590d5108bbdaabb05af590f76c9757daceb6d02e",
-			"revisionTime": "2016-01-15T00:55:58-05:00"
-		},
-		{
-			"path": "github.com/docker/docker/pkg/jsonlog",
-			"revision": "590d5108bbdaabb05af590f76c9757daceb6d02e",
-			"revisionTime": "2016-01-15T00:55:58-05:00"
-		},
-		{
-			"path": "github.com/docker/docker/pkg/longpath",
-			"revision": "590d5108bbdaabb05af590f76c9757daceb6d02e",
-			"revisionTime": "2016-01-15T00:55:58-05:00"
-		},
-		{
-			"path": "github.com/docker/docker/pkg/mflag",
-			"revision": "590d5108bbdaabb05af590f76c9757daceb6d02e",
-			"revisionTime": "2016-01-15T00:55:58-05:00"
-		},
-		{
-			"path": "github.com/docker/docker/pkg/mount",
-			"revision": "590d5108bbdaabb05af590f76c9757daceb6d02e",
-			"revisionTime": "2016-01-15T00:55:58-05:00"
-		},
-		{
-			"path": "github.com/docker/docker/pkg/plugins",
-			"revision": "590d5108bbdaabb05af590f76c9757daceb6d02e",
-			"revisionTime": "2016-01-15T00:55:58-05:00"
-		},
-		{
-			"path": "github.com/docker/docker/pkg/pools",
-			"revision": "590d5108bbdaabb05af590f76c9757daceb6d02e",
-			"revisionTime": "2016-01-15T00:55:58-05:00"
-		},
-		{
-			"path": "github.com/docker/docker/pkg/promise",
-			"revision": "590d5108bbdaabb05af590f76c9757daceb6d02e",
-			"revisionTime": "2016-01-15T00:55:58-05:00"
-		},
-		{
-			"path": "github.com/docker/docker/pkg/pubsub",
-			"revision": "590d5108bbdaabb05af590f76c9757daceb6d02e",
-			"revisionTime": "2016-01-15T00:55:58-05:00"
-		},
-		{
-			"path": "github.com/docker/docker/pkg/random",
-			"revision": "590d5108bbdaabb05af590f76c9757daceb6d02e",
-			"revisionTime": "2016-01-15T00:55:58-05:00"
-		},
-		{
-			"path": "github.com/docker/docker/pkg/reexec",
-			"revision": "590d5108bbdaabb05af590f76c9757daceb6d02e",
-			"revisionTime": "2016-01-15T00:55:58-05:00"
-		},
-		{
-			"path": "github.com/docker/docker/pkg/signal",
-			"revision": "590d5108bbdaabb05af590f76c9757daceb6d02e",
-			"revisionTime": "2016-01-15T00:55:58-05:00"
-		},
-		{
-			"path": "github.com/docker/docker/pkg/stringid",
-			"revision": "590d5108bbdaabb05af590f76c9757daceb6d02e",
-			"revisionTime": "2016-01-15T00:55:58-05:00"
-		},
-		{
-			"path": "github.com/docker/docker/pkg/stringutils",
-			"revision": "590d5108bbdaabb05af590f76c9757daceb6d02e",
-			"revisionTime": "2016-01-15T00:55:58-05:00"
-		},
-		{
-			"path": "github.com/docker/docker/pkg/symlink",
-			"revision": "590d5108bbdaabb05af590f76c9757daceb6d02e",
-			"revisionTime": "2016-01-15T00:55:58-05:00"
-		},
-		{
-			"path": "github.com/docker/docker/pkg/system",
-			"revision": "590d5108bbdaabb05af590f76c9757daceb6d02e",
-			"revisionTime": "2016-01-15T00:55:58-05:00"
-		},
-		{
-			"path": "github.com/docker/docker/pkg/tailfile",
-			"revision": "590d5108bbdaabb05af590f76c9757daceb6d02e",
-			"revisionTime": "2016-01-15T00:55:58-05:00"
+			"revision": "711ad55b00f25d5b55d362a6ec808784f5044438",
+			"revisionTime": "2016-02-21T14:49:20-03:00"
 		},
 		{
 			"origin": "github.com/docker/machine/vendor/github.com/docker/docker/pkg/term",
 			"path": "github.com/docker/docker/pkg/term",
-			"revision": "e27fb87286cb8e7454183ce46a6e1e84b31965e9",
-			"revisionTime": "2016-02-04T13:53:12-08:00"
+			"revision": "7cc7fbadcc4ba65dd2fde38d5fb6b301c6ce469b",
+			"revisionTime": "2016-02-19T16:52:47-08:00"
 		},
 		{
-			"path": "github.com/docker/docker/runconfig",
-			"revision": "590d5108bbdaabb05af590f76c9757daceb6d02e",
-			"revisionTime": "2016-01-15T00:55:58-05:00"
-		},
-		{
-			"path": "github.com/docker/docker/runconfig/opts",
-			"revision": "590d5108bbdaabb05af590f76c9757daceb6d02e",
-			"revisionTime": "2016-01-15T00:55:58-05:00"
-		},
-		{
-			"path": "github.com/docker/docker/utils",
-			"revision": "590d5108bbdaabb05af590f76c9757daceb6d02e",
-			"revisionTime": "2016-01-15T00:55:58-05:00"
-		},
-		{
-			"path": "github.com/docker/docker/volume",
-			"revision": "590d5108bbdaabb05af590f76c9757daceb6d02e",
-			"revisionTime": "2016-01-15T00:55:58-05:00"
-		},
-		{
-			"path": "github.com/docker/engine-api/types",
-			"revision": "8a6724492a0d50bceca94fcbaa8dfb1ad73b6997",
-			"revisionTime": "2016-02-12T10:49:48-08:00"
-		},
-		{
-			"path": "github.com/docker/engine-api/types/blkiodev",
-			"revision": "8a6724492a0d50bceca94fcbaa8dfb1ad73b6997",
-			"revisionTime": "2016-02-12T10:49:48-08:00"
-		},
-		{
-			"path": "github.com/docker/engine-api/types/container",
-			"revision": "8a6724492a0d50bceca94fcbaa8dfb1ad73b6997",
-			"revisionTime": "2016-02-12T10:49:48-08:00"
-		},
-		{
-			"path": "github.com/docker/engine-api/types/filters",
-			"revision": "8a6724492a0d50bceca94fcbaa8dfb1ad73b6997",
-			"revisionTime": "2016-02-12T10:49:48-08:00"
-		},
-		{
-			"path": "github.com/docker/engine-api/types/network",
-			"revision": "8a6724492a0d50bceca94fcbaa8dfb1ad73b6997",
-			"revisionTime": "2016-02-12T10:49:48-08:00"
-		},
-		{
-			"path": "github.com/docker/engine-api/types/registry",
-			"revision": "8a6724492a0d50bceca94fcbaa8dfb1ad73b6997",
-			"revisionTime": "2016-02-12T10:49:48-08:00"
-		},
-		{
-			"path": "github.com/docker/engine-api/types/strslice",
-			"revision": "8a6724492a0d50bceca94fcbaa8dfb1ad73b6997",
-			"revisionTime": "2016-02-12T10:49:48-08:00"
-		},
-		{
-			"path": "github.com/docker/go-connections/nat",
-			"revision": "34b5052da6b11e27f5f2e357b38b571ddddd3928",
-			"revisionTime": "2016-02-12T15:19:11-08:00"
-		},
-		{
-			"path": "github.com/docker/go-connections/sockets",
-			"revision": "34b5052da6b11e27f5f2e357b38b571ddddd3928",
-			"revisionTime": "2016-02-12T15:19:11-08:00"
-		},
-		{
-			"path": "github.com/docker/go-connections/tlsconfig",
-			"revision": "34b5052da6b11e27f5f2e357b38b571ddddd3928",
-			"revisionTime": "2016-02-12T15:19:11-08:00"
-		},
-		{
+			"origin": "github.com/docker/machine/vendor/github.com/docker/go-units",
 			"path": "github.com/docker/go-units",
-			"revision": "e27fb87286cb8e7454183ce46a6e1e84b31965e9",
-			"revisionTime": "2016-02-04T13:53:12-08:00"
+			"revision": "7cc7fbadcc4ba65dd2fde38d5fb6b301c6ce469b",
+			"revisionTime": "2016-02-19T16:52:47-08:00"
 		},
 		{
 			"path": "github.com/docker/machine/commands/mcndirs",
-			"revision": "e27fb87286cb8e7454183ce46a6e1e84b31965e9",
-			"revisionTime": "2016-02-04T13:53:12-08:00"
+			"revision": "7cc7fbadcc4ba65dd2fde38d5fb6b301c6ce469b",
+			"revisionTime": "2016-02-19T16:52:47-08:00"
 		},
 		{
 			"path": "github.com/docker/machine/drivers/errdriver",
-			"revision": "e27fb87286cb8e7454183ce46a6e1e84b31965e9",
-			"revisionTime": "2016-02-04T13:53:12-08:00"
-		},
-		{
-			"path": "github.com/docker/machine/drivers/fakedriver",
-			"revision": "e27fb87286cb8e7454183ce46a6e1e84b31965e9",
-			"revisionTime": "2016-02-04T13:53:12-08:00"
+			"revision": "7cc7fbadcc4ba65dd2fde38d5fb6b301c6ce469b",
+			"revisionTime": "2016-02-19T16:52:47-08:00"
 		},
 		{
 			"path": "github.com/docker/machine/drivers/none",
-			"revision": "e27fb87286cb8e7454183ce46a6e1e84b31965e9",
-			"revisionTime": "2016-02-04T13:53:12-08:00"
+			"revision": "7cc7fbadcc4ba65dd2fde38d5fb6b301c6ce469b",
+			"revisionTime": "2016-02-19T16:52:47-08:00"
 		},
 		{
 			"path": "github.com/docker/machine/drivers/virtualbox",
-			"revision": "e27fb87286cb8e7454183ce46a6e1e84b31965e9",
-			"revisionTime": "2016-02-04T13:53:12-08:00"
+			"revision": "7cc7fbadcc4ba65dd2fde38d5fb6b301c6ce469b",
+			"revisionTime": "2016-02-19T16:52:47-08:00"
 		},
 		{
 			"path": "github.com/docker/machine/libmachine",
-			"revision": "e27fb87286cb8e7454183ce46a6e1e84b31965e9",
-			"revisionTime": "2016-02-04T13:53:12-08:00"
+			"revision": "7cc7fbadcc4ba65dd2fde38d5fb6b301c6ce469b",
+			"revisionTime": "2016-02-19T16:52:47-08:00"
 		},
 		{
 			"path": "github.com/docker/machine/libmachine/auth",
-			"revision": "e27fb87286cb8e7454183ce46a6e1e84b31965e9",
-			"revisionTime": "2016-02-04T13:53:12-08:00"
+			"revision": "7cc7fbadcc4ba65dd2fde38d5fb6b301c6ce469b",
+			"revisionTime": "2016-02-19T16:52:47-08:00"
 		},
 		{
 			"path": "github.com/docker/machine/libmachine/cert",
-			"revision": "e27fb87286cb8e7454183ce46a6e1e84b31965e9",
-			"revisionTime": "2016-02-04T13:53:12-08:00"
+			"revision": "7cc7fbadcc4ba65dd2fde38d5fb6b301c6ce469b",
+			"revisionTime": "2016-02-19T16:52:47-08:00"
 		},
 		{
 			"path": "github.com/docker/machine/libmachine/check",
-			"revision": "e27fb87286cb8e7454183ce46a6e1e84b31965e9",
-			"revisionTime": "2016-02-04T13:53:12-08:00"
+			"revision": "7cc7fbadcc4ba65dd2fde38d5fb6b301c6ce469b",
+			"revisionTime": "2016-02-19T16:52:47-08:00"
 		},
 		{
 			"path": "github.com/docker/machine/libmachine/drivers",
-			"revision": "e27fb87286cb8e7454183ce46a6e1e84b31965e9",
-			"revisionTime": "2016-02-04T13:53:12-08:00"
+			"revision": "7cc7fbadcc4ba65dd2fde38d5fb6b301c6ce469b",
+			"revisionTime": "2016-02-19T16:52:47-08:00"
 		},
 		{
 			"path": "github.com/docker/machine/libmachine/drivers/plugin/localbinary",
-			"revision": "e27fb87286cb8e7454183ce46a6e1e84b31965e9",
-			"revisionTime": "2016-02-04T13:53:12-08:00"
+			"revision": "7cc7fbadcc4ba65dd2fde38d5fb6b301c6ce469b",
+			"revisionTime": "2016-02-19T16:52:47-08:00"
 		},
 		{
 			"path": "github.com/docker/machine/libmachine/drivers/rpc",
-			"revision": "e27fb87286cb8e7454183ce46a6e1e84b31965e9",
-			"revisionTime": "2016-02-04T13:53:12-08:00"
+			"revision": "7cc7fbadcc4ba65dd2fde38d5fb6b301c6ce469b",
+			"revisionTime": "2016-02-19T16:52:47-08:00"
 		},
 		{
 			"path": "github.com/docker/machine/libmachine/engine",
-			"revision": "e27fb87286cb8e7454183ce46a6e1e84b31965e9",
-			"revisionTime": "2016-02-04T13:53:12-08:00"
+			"revision": "7cc7fbadcc4ba65dd2fde38d5fb6b301c6ce469b",
+			"revisionTime": "2016-02-19T16:52:47-08:00"
 		},
 		{
 			"path": "github.com/docker/machine/libmachine/host",
-			"revision": "e27fb87286cb8e7454183ce46a6e1e84b31965e9",
-			"revisionTime": "2016-02-04T13:53:12-08:00"
-		},
-		{
-			"path": "github.com/docker/machine/libmachine/hosttest",
-			"revision": "e27fb87286cb8e7454183ce46a6e1e84b31965e9",
-			"revisionTime": "2016-02-04T13:53:12-08:00"
+			"revision": "7cc7fbadcc4ba65dd2fde38d5fb6b301c6ce469b",
+			"revisionTime": "2016-02-19T16:52:47-08:00"
 		},
 		{
 			"path": "github.com/docker/machine/libmachine/log",
-			"revision": "e27fb87286cb8e7454183ce46a6e1e84b31965e9",
-			"revisionTime": "2016-02-04T13:53:12-08:00"
+			"revision": "7cc7fbadcc4ba65dd2fde38d5fb6b301c6ce469b",
+			"revisionTime": "2016-02-19T16:52:47-08:00"
 		},
 		{
 			"path": "github.com/docker/machine/libmachine/mcndockerclient",
-			"revision": "e27fb87286cb8e7454183ce46a6e1e84b31965e9",
-			"revisionTime": "2016-02-04T13:53:12-08:00"
+			"revision": "7cc7fbadcc4ba65dd2fde38d5fb6b301c6ce469b",
+			"revisionTime": "2016-02-19T16:52:47-08:00"
 		},
 		{
 			"path": "github.com/docker/machine/libmachine/mcnerror",
-			"revision": "e27fb87286cb8e7454183ce46a6e1e84b31965e9",
-			"revisionTime": "2016-02-04T13:53:12-08:00"
+			"revision": "7cc7fbadcc4ba65dd2fde38d5fb6b301c6ce469b",
+			"revisionTime": "2016-02-19T16:52:47-08:00"
 		},
 		{
 			"path": "github.com/docker/machine/libmachine/mcnflag",
-			"revision": "e27fb87286cb8e7454183ce46a6e1e84b31965e9",
-			"revisionTime": "2016-02-04T13:53:12-08:00"
+			"revision": "7cc7fbadcc4ba65dd2fde38d5fb6b301c6ce469b",
+			"revisionTime": "2016-02-19T16:52:47-08:00"
 		},
 		{
 			"path": "github.com/docker/machine/libmachine/mcnutils",
-			"revision": "e27fb87286cb8e7454183ce46a6e1e84b31965e9",
-			"revisionTime": "2016-02-04T13:53:12-08:00"
+			"revision": "7cc7fbadcc4ba65dd2fde38d5fb6b301c6ce469b",
+			"revisionTime": "2016-02-19T16:52:47-08:00"
 		},
 		{
 			"path": "github.com/docker/machine/libmachine/persist",
-			"revision": "e27fb87286cb8e7454183ce46a6e1e84b31965e9",
-			"revisionTime": "2016-02-04T13:53:12-08:00"
+			"revision": "7cc7fbadcc4ba65dd2fde38d5fb6b301c6ce469b",
+			"revisionTime": "2016-02-19T16:52:47-08:00"
 		},
 		{
 			"path": "github.com/docker/machine/libmachine/provision",
-			"revision": "e27fb87286cb8e7454183ce46a6e1e84b31965e9",
-			"revisionTime": "2016-02-04T13:53:12-08:00"
+			"revision": "7cc7fbadcc4ba65dd2fde38d5fb6b301c6ce469b",
+			"revisionTime": "2016-02-19T16:52:47-08:00"
 		},
 		{
 			"path": "github.com/docker/machine/libmachine/provision/pkgaction",
-			"revision": "e27fb87286cb8e7454183ce46a6e1e84b31965e9",
-			"revisionTime": "2016-02-04T13:53:12-08:00"
-		},
-		{
-			"path": "github.com/docker/machine/libmachine/provision/provisiontest",
-			"revision": "e27fb87286cb8e7454183ce46a6e1e84b31965e9",
-			"revisionTime": "2016-02-04T13:53:12-08:00"
+			"revision": "7cc7fbadcc4ba65dd2fde38d5fb6b301c6ce469b",
+			"revisionTime": "2016-02-19T16:52:47-08:00"
 		},
 		{
 			"path": "github.com/docker/machine/libmachine/provision/serviceaction",
-			"revision": "e27fb87286cb8e7454183ce46a6e1e84b31965e9",
-			"revisionTime": "2016-02-04T13:53:12-08:00"
+			"revision": "7cc7fbadcc4ba65dd2fde38d5fb6b301c6ce469b",
+			"revisionTime": "2016-02-19T16:52:47-08:00"
 		},
 		{
 			"path": "github.com/docker/machine/libmachine/ssh",
-			"revision": "e27fb87286cb8e7454183ce46a6e1e84b31965e9",
-			"revisionTime": "2016-02-04T13:53:12-08:00"
+			"revision": "7cc7fbadcc4ba65dd2fde38d5fb6b301c6ce469b",
+			"revisionTime": "2016-02-19T16:52:47-08:00"
 		},
 		{
 			"path": "github.com/docker/machine/libmachine/state",
-			"revision": "e27fb87286cb8e7454183ce46a6e1e84b31965e9",
-			"revisionTime": "2016-02-04T13:53:12-08:00"
+			"revision": "7cc7fbadcc4ba65dd2fde38d5fb6b301c6ce469b",
+			"revisionTime": "2016-02-19T16:52:47-08:00"
 		},
 		{
 			"path": "github.com/docker/machine/libmachine/swarm",
-			"revision": "e27fb87286cb8e7454183ce46a6e1e84b31965e9",
-			"revisionTime": "2016-02-04T13:53:12-08:00"
+			"revision": "7cc7fbadcc4ba65dd2fde38d5fb6b301c6ce469b",
+			"revisionTime": "2016-02-19T16:52:47-08:00"
 		},
 		{
 			"path": "github.com/docker/machine/libmachine/version",
-			"revision": "e27fb87286cb8e7454183ce46a6e1e84b31965e9",
-			"revisionTime": "2016-02-04T13:53:12-08:00"
+			"revision": "7cc7fbadcc4ba65dd2fde38d5fb6b301c6ce469b",
+			"revisionTime": "2016-02-19T16:52:47-08:00"
 		},
 		{
 			"path": "github.com/fsouza/go-dockerclient",
-			"revision": "9184fe7a2d7c920b8cdd30faa64fe025f609ef20",
-			"revisionTime": "2016-02-13T15:21:03-02:00"
+			"revision": "d92e9b886690a7daa42daa3807d1829c6e6a9d0a",
+			"revisionTime": "2016-02-17T21:03:22-02:00"
 		},
 		{
 			"path": "github.com/fsouza/go-dockerclient/external/github.com/Sirupsen/logrus",
-			"revision": "9184fe7a2d7c920b8cdd30faa64fe025f609ef20",
-			"revisionTime": "2016-02-13T15:21:03-02:00"
+			"revision": "d92e9b886690a7daa42daa3807d1829c6e6a9d0a",
+			"revisionTime": "2016-02-17T21:03:22-02:00"
 		},
 		{
 			"path": "github.com/fsouza/go-dockerclient/external/github.com/docker/docker/opts",
-			"revision": "9184fe7a2d7c920b8cdd30faa64fe025f609ef20",
-			"revisionTime": "2016-02-13T15:21:03-02:00"
+			"revision": "d92e9b886690a7daa42daa3807d1829c6e6a9d0a",
+			"revisionTime": "2016-02-17T21:03:22-02:00"
 		},
 		{
 			"path": "github.com/fsouza/go-dockerclient/external/github.com/docker/docker/pkg/archive",
-			"revision": "9184fe7a2d7c920b8cdd30faa64fe025f609ef20",
-			"revisionTime": "2016-02-13T15:21:03-02:00"
+			"revision": "d92e9b886690a7daa42daa3807d1829c6e6a9d0a",
+			"revisionTime": "2016-02-17T21:03:22-02:00"
 		},
 		{
 			"path": "github.com/fsouza/go-dockerclient/external/github.com/docker/docker/pkg/fileutils",
-			"revision": "9184fe7a2d7c920b8cdd30faa64fe025f609ef20",
-			"revisionTime": "2016-02-13T15:21:03-02:00"
+			"revision": "d92e9b886690a7daa42daa3807d1829c6e6a9d0a",
+			"revisionTime": "2016-02-17T21:03:22-02:00"
 		},
 		{
 			"path": "github.com/fsouza/go-dockerclient/external/github.com/docker/docker/pkg/homedir",
-			"revision": "9184fe7a2d7c920b8cdd30faa64fe025f609ef20",
-			"revisionTime": "2016-02-13T15:21:03-02:00"
+			"revision": "d92e9b886690a7daa42daa3807d1829c6e6a9d0a",
+			"revisionTime": "2016-02-17T21:03:22-02:00"
 		},
 		{
 			"path": "github.com/fsouza/go-dockerclient/external/github.com/docker/docker/pkg/idtools",
-			"revision": "9184fe7a2d7c920b8cdd30faa64fe025f609ef20",
-			"revisionTime": "2016-02-13T15:21:03-02:00"
+			"revision": "d92e9b886690a7daa42daa3807d1829c6e6a9d0a",
+			"revisionTime": "2016-02-17T21:03:22-02:00"
 		},
 		{
 			"path": "github.com/fsouza/go-dockerclient/external/github.com/docker/docker/pkg/ioutils",
-			"revision": "9184fe7a2d7c920b8cdd30faa64fe025f609ef20",
-			"revisionTime": "2016-02-13T15:21:03-02:00"
+			"revision": "d92e9b886690a7daa42daa3807d1829c6e6a9d0a",
+			"revisionTime": "2016-02-17T21:03:22-02:00"
 		},
 		{
 			"path": "github.com/fsouza/go-dockerclient/external/github.com/docker/docker/pkg/longpath",
-			"revision": "9184fe7a2d7c920b8cdd30faa64fe025f609ef20",
-			"revisionTime": "2016-02-13T15:21:03-02:00"
+			"revision": "d92e9b886690a7daa42daa3807d1829c6e6a9d0a",
+			"revisionTime": "2016-02-17T21:03:22-02:00"
 		},
 		{
 			"path": "github.com/fsouza/go-dockerclient/external/github.com/docker/docker/pkg/pools",
-			"revision": "9184fe7a2d7c920b8cdd30faa64fe025f609ef20",
-			"revisionTime": "2016-02-13T15:21:03-02:00"
+			"revision": "d92e9b886690a7daa42daa3807d1829c6e6a9d0a",
+			"revisionTime": "2016-02-17T21:03:22-02:00"
 		},
 		{
 			"path": "github.com/fsouza/go-dockerclient/external/github.com/docker/docker/pkg/promise",
-			"revision": "9184fe7a2d7c920b8cdd30faa64fe025f609ef20",
-			"revisionTime": "2016-02-13T15:21:03-02:00"
+			"revision": "d92e9b886690a7daa42daa3807d1829c6e6a9d0a",
+			"revisionTime": "2016-02-17T21:03:22-02:00"
 		},
 		{
 			"path": "github.com/fsouza/go-dockerclient/external/github.com/docker/docker/pkg/stdcopy",
-			"revision": "9184fe7a2d7c920b8cdd30faa64fe025f609ef20",
-			"revisionTime": "2016-02-13T15:21:03-02:00"
+			"revision": "d92e9b886690a7daa42daa3807d1829c6e6a9d0a",
+			"revisionTime": "2016-02-17T21:03:22-02:00"
 		},
 		{
 			"path": "github.com/fsouza/go-dockerclient/external/github.com/docker/docker/pkg/system",
-			"revision": "9184fe7a2d7c920b8cdd30faa64fe025f609ef20",
-			"revisionTime": "2016-02-13T15:21:03-02:00"
+			"revision": "d92e9b886690a7daa42daa3807d1829c6e6a9d0a",
+			"revisionTime": "2016-02-17T21:03:22-02:00"
 		},
 		{
 			"path": "github.com/fsouza/go-dockerclient/external/github.com/docker/go-units",
-			"revision": "9184fe7a2d7c920b8cdd30faa64fe025f609ef20",
-			"revisionTime": "2016-02-13T15:21:03-02:00"
+			"revision": "d92e9b886690a7daa42daa3807d1829c6e6a9d0a",
+			"revisionTime": "2016-02-17T21:03:22-02:00"
 		},
 		{
 			"path": "github.com/fsouza/go-dockerclient/external/github.com/hashicorp/go-cleanhttp",
-			"revision": "9184fe7a2d7c920b8cdd30faa64fe025f609ef20",
-			"revisionTime": "2016-02-13T15:21:03-02:00"
+			"revision": "d92e9b886690a7daa42daa3807d1829c6e6a9d0a",
+			"revisionTime": "2016-02-17T21:03:22-02:00"
 		},
 		{
 			"path": "github.com/fsouza/go-dockerclient/external/github.com/opencontainers/runc/libcontainer/user",
-			"revision": "9184fe7a2d7c920b8cdd30faa64fe025f609ef20",
-			"revisionTime": "2016-02-13T15:21:03-02:00"
+			"revision": "d92e9b886690a7daa42daa3807d1829c6e6a9d0a",
+			"revisionTime": "2016-02-17T21:03:22-02:00"
 		},
 		{
 			"path": "github.com/fsouza/go-dockerclient/external/golang.org/x/net/context",
-			"revision": "9184fe7a2d7c920b8cdd30faa64fe025f609ef20",
-			"revisionTime": "2016-02-13T15:21:03-02:00"
+			"revision": "d92e9b886690a7daa42daa3807d1829c6e6a9d0a",
+			"revisionTime": "2016-02-17T21:03:22-02:00"
 		},
 		{
 			"path": "github.com/fsouza/go-dockerclient/external/golang.org/x/sys/unix",
-			"revision": "9184fe7a2d7c920b8cdd30faa64fe025f609ef20",
-			"revisionTime": "2016-02-13T15:21:03-02:00"
+			"revision": "d92e9b886690a7daa42daa3807d1829c6e6a9d0a",
+			"revisionTime": "2016-02-17T21:03:22-02:00"
 		},
 		{
 			"origin": "github.com/tsuru/tsuru/vendor/github.com/howeyc/fsnotify",
 			"path": "github.com/howeyc/fsnotify",
-			"revision": "e0e6e86e417165a44059835218dd74f0c08d4234",
-			"revisionTime": "2016-02-12T21:39:08-02:00"
+			"revision": "711ad55b00f25d5b55d362a6ec808784f5044438",
+			"revisionTime": "2016-02-21T14:49:20-03:00"
 		},
 		{
 			"origin": "github.com/tsuru/tsuru/vendor/github.com/kardianos/osext",
 			"path": "github.com/kardianos/osext",
-			"revision": "e0e6e86e417165a44059835218dd74f0c08d4234",
-			"revisionTime": "2016-02-12T21:39:08-02:00"
+			"revision": "711ad55b00f25d5b55d362a6ec808784f5044438",
+			"revisionTime": "2016-02-21T14:49:20-03:00"
 		},
 		{
 			"origin": "github.com/tsuru/tsuru/vendor/github.com/nu7hatch/gouuid",
 			"path": "github.com/nu7hatch/gouuid",
-			"revision": "e0e6e86e417165a44059835218dd74f0c08d4234",
-			"revisionTime": "2016-02-12T21:39:08-02:00"
-		},
-		{
-			"path": "github.com/opencontainers/runc/libcontainer",
-			"revision": "361f9b7921665b5894faef36fc8430aec573dfa4",
-			"revisionTime": "2016-02-11T10:27:58-08:00"
-		},
-		{
-			"path": "github.com/opencontainers/runc/libcontainer/apparmor",
-			"revision": "361f9b7921665b5894faef36fc8430aec573dfa4",
-			"revisionTime": "2016-02-11T10:27:58-08:00"
-		},
-		{
-			"path": "github.com/opencontainers/runc/libcontainer/cgroups",
-			"revision": "361f9b7921665b5894faef36fc8430aec573dfa4",
-			"revisionTime": "2016-02-11T10:27:58-08:00"
-		},
-		{
-			"path": "github.com/opencontainers/runc/libcontainer/cgroups/fs",
-			"revision": "361f9b7921665b5894faef36fc8430aec573dfa4",
-			"revisionTime": "2016-02-11T10:27:58-08:00"
-		},
-		{
-			"path": "github.com/opencontainers/runc/libcontainer/cgroups/systemd",
-			"revision": "361f9b7921665b5894faef36fc8430aec573dfa4",
-			"revisionTime": "2016-02-11T10:27:58-08:00"
-		},
-		{
-			"path": "github.com/opencontainers/runc/libcontainer/configs",
-			"revision": "361f9b7921665b5894faef36fc8430aec573dfa4",
-			"revisionTime": "2016-02-11T10:27:58-08:00"
-		},
-		{
-			"path": "github.com/opencontainers/runc/libcontainer/configs/validate",
-			"revision": "361f9b7921665b5894faef36fc8430aec573dfa4",
-			"revisionTime": "2016-02-11T10:27:58-08:00"
-		},
-		{
-			"path": "github.com/opencontainers/runc/libcontainer/criurpc",
-			"revision": "361f9b7921665b5894faef36fc8430aec573dfa4",
-			"revisionTime": "2016-02-11T10:27:58-08:00"
-		},
-		{
-			"path": "github.com/opencontainers/runc/libcontainer/keys",
-			"revision": "361f9b7921665b5894faef36fc8430aec573dfa4",
-			"revisionTime": "2016-02-11T10:27:58-08:00"
-		},
-		{
-			"path": "github.com/opencontainers/runc/libcontainer/label",
-			"revision": "361f9b7921665b5894faef36fc8430aec573dfa4",
-			"revisionTime": "2016-02-11T10:27:58-08:00"
-		},
-		{
-			"path": "github.com/opencontainers/runc/libcontainer/seccomp",
-			"revision": "361f9b7921665b5894faef36fc8430aec573dfa4",
-			"revisionTime": "2016-02-11T10:27:58-08:00"
-		},
-		{
-			"path": "github.com/opencontainers/runc/libcontainer/selinux",
-			"revision": "361f9b7921665b5894faef36fc8430aec573dfa4",
-			"revisionTime": "2016-02-11T10:27:58-08:00"
-		},
-		{
-			"path": "github.com/opencontainers/runc/libcontainer/stacktrace",
-			"revision": "361f9b7921665b5894faef36fc8430aec573dfa4",
-			"revisionTime": "2016-02-11T10:27:58-08:00"
-		},
-		{
-			"path": "github.com/opencontainers/runc/libcontainer/system",
-			"revision": "361f9b7921665b5894faef36fc8430aec573dfa4",
-			"revisionTime": "2016-02-11T10:27:58-08:00"
-		},
-		{
-			"path": "github.com/opencontainers/runc/libcontainer/user",
-			"revision": "361f9b7921665b5894faef36fc8430aec573dfa4",
-			"revisionTime": "2016-02-11T10:27:58-08:00"
-		},
-		{
-			"path": "github.com/opencontainers/runc/libcontainer/utils",
-			"revision": "361f9b7921665b5894faef36fc8430aec573dfa4",
-			"revisionTime": "2016-02-11T10:27:58-08:00"
+			"revision": "711ad55b00f25d5b55d362a6ec808784f5044438",
+			"revisionTime": "2016-02-21T14:49:20-03:00"
 		},
 		{
 			"origin": "github.com/tsuru/tsuru/vendor/github.com/sajari/fuzzy",
 			"path": "github.com/sajari/fuzzy",
-			"revision": "e0e6e86e417165a44059835218dd74f0c08d4234",
-			"revisionTime": "2016-02-12T21:39:08-02:00"
+			"revision": "711ad55b00f25d5b55d362a6ec808784f5044438",
+			"revisionTime": "2016-02-21T14:49:20-03:00"
 		},
 		{
 			"origin": "github.com/docker/machine/vendor/github.com/samalba/dockerclient",
 			"path": "github.com/samalba/dockerclient",
-			"revision": "e27fb87286cb8e7454183ce46a6e1e84b31965e9",
-			"revisionTime": "2016-02-04T13:53:12-08:00"
-		},
-		{
-			"origin": "github.com/docker/machine/vendor/github.com/stretchr/testify/assert",
-			"path": "github.com/stretchr/testify/assert",
-			"revision": "e4ec8152c15fc46bd5056ce65997a07c7d415325",
-			"revisionTime": "2015-02-18T14:18:46-08:00"
-		},
-		{
-			"path": "github.com/syndtr/gocapability/capability",
-			"revision": "2c00daeb6c3b45114c80ac44119e7b8801fdd852",
-			"revisionTime": "2015-07-16T08:09:06+07:00"
-		},
-		{
-			"origin": "github.com/tsuru/tsuru/vendor/github.com/tsuru/commandmocker",
-			"path": "github.com/tsuru/commandmocker",
-			"revision": "e0e6e86e417165a44059835218dd74f0c08d4234",
-			"revisionTime": "2016-02-12T21:39:08-02:00"
+			"revision": "7cc7fbadcc4ba65dd2fde38d5fb6b301c6ce469b",
+			"revisionTime": "2016-02-19T16:52:47-08:00"
 		},
 		{
 			"origin": "github.com/tsuru/tsuru/vendor/github.com/tsuru/config",
 			"path": "github.com/tsuru/config",
-			"revision": "e0e6e86e417165a44059835218dd74f0c08d4234",
-			"revisionTime": "2016-02-12T21:39:08-02:00"
+			"revision": "711ad55b00f25d5b55d362a6ec808784f5044438",
+			"revisionTime": "2016-02-21T14:49:20-03:00"
 		},
 		{
-			"origin": "github.com/tsuru/tsuru/vendor/github.com/tsuru/gnuflag",
 			"path": "github.com/tsuru/gnuflag",
-			"revision": "e0e6e86e417165a44059835218dd74f0c08d4234",
-			"revisionTime": "2016-02-12T21:39:08-02:00"
+			"revision": "86b8c1b864aadcf9c94d67bc607ce3f19cbb9aa2",
+			"revisionTime": "2015-12-17T14:20:21-02:00"
 		},
 		{
 			"path": "github.com/tsuru/tsuru/auth",
-			"revision": "e0e6e86e417165a44059835218dd74f0c08d4234",
-			"revisionTime": "2016-02-12T21:39:08-02:00"
-		},
-		{
-			"path": "github.com/tsuru/tsuru/auth/authtest",
-			"revision": "e0e6e86e417165a44059835218dd74f0c08d4234",
-			"revisionTime": "2016-02-12T21:39:08-02:00"
+			"revision": "711ad55b00f25d5b55d362a6ec808784f5044438",
+			"revisionTime": "2016-02-21T14:49:20-03:00"
 		},
 		{
 			"path": "github.com/tsuru/tsuru/auth/native",
-			"revision": "e0e6e86e417165a44059835218dd74f0c08d4234",
-			"revisionTime": "2016-02-12T21:39:08-02:00"
+			"revision": "711ad55b00f25d5b55d362a6ec808784f5044438",
+			"revisionTime": "2016-02-21T14:49:20-03:00"
 		},
 		{
 			"path": "github.com/tsuru/tsuru/auth/saml",
-			"revision": "e0e6e86e417165a44059835218dd74f0c08d4234",
-			"revisionTime": "2016-02-12T21:39:08-02:00"
+			"revision": "711ad55b00f25d5b55d362a6ec808784f5044438",
+			"revisionTime": "2016-02-21T14:49:20-03:00"
 		},
 		{
 			"path": "github.com/tsuru/tsuru/cmd",
-			"revision": "e0e6e86e417165a44059835218dd74f0c08d4234",
-			"revisionTime": "2016-02-12T21:39:08-02:00"
-		},
-		{
-			"path": "github.com/tsuru/tsuru/cmd/cmdtest",
-			"revision": "e0e6e86e417165a44059835218dd74f0c08d4234",
-			"revisionTime": "2016-02-12T21:39:08-02:00"
+			"revision": "711ad55b00f25d5b55d362a6ec808784f5044438",
+			"revisionTime": "2016-02-21T14:49:20-03:00"
 		},
 		{
 			"path": "github.com/tsuru/tsuru/db",
-			"revision": "e0e6e86e417165a44059835218dd74f0c08d4234",
-			"revisionTime": "2016-02-12T21:39:08-02:00"
-		},
-		{
-			"path": "github.com/tsuru/tsuru/db/dbtest",
-			"revision": "e0e6e86e417165a44059835218dd74f0c08d4234",
-			"revisionTime": "2016-02-12T21:39:08-02:00"
+			"revision": "711ad55b00f25d5b55d362a6ec808784f5044438",
+			"revisionTime": "2016-02-21T14:49:20-03:00"
 		},
 		{
 			"path": "github.com/tsuru/tsuru/db/storage",
-			"revision": "e0e6e86e417165a44059835218dd74f0c08d4234",
-			"revisionTime": "2016-02-12T21:39:08-02:00"
+			"revision": "711ad55b00f25d5b55d362a6ec808784f5044438",
+			"revisionTime": "2016-02-21T14:49:20-03:00"
 		},
 		{
 			"path": "github.com/tsuru/tsuru/errors",
-			"revision": "e0e6e86e417165a44059835218dd74f0c08d4234",
-			"revisionTime": "2016-02-12T21:39:08-02:00"
+			"revision": "711ad55b00f25d5b55d362a6ec808784f5044438",
+			"revisionTime": "2016-02-21T14:49:20-03:00"
 		},
 		{
 			"path": "github.com/tsuru/tsuru/exec",
-			"revision": "e0e6e86e417165a44059835218dd74f0c08d4234",
-			"revisionTime": "2016-02-12T21:39:08-02:00"
-		},
-		{
-			"path": "github.com/tsuru/tsuru/exec/exectest",
-			"revision": "e0e6e86e417165a44059835218dd74f0c08d4234",
-			"revisionTime": "2016-02-12T21:39:08-02:00"
+			"revision": "711ad55b00f25d5b55d362a6ec808784f5044438",
+			"revisionTime": "2016-02-21T14:49:20-03:00"
 		},
 		{
 			"path": "github.com/tsuru/tsuru/fs",
-			"revision": "e0e6e86e417165a44059835218dd74f0c08d4234",
-			"revisionTime": "2016-02-12T21:39:08-02:00"
-		},
-		{
-			"path": "github.com/tsuru/tsuru/fs/fstest",
-			"revision": "e0e6e86e417165a44059835218dd74f0c08d4234",
-			"revisionTime": "2016-02-12T21:39:08-02:00"
+			"revision": "711ad55b00f25d5b55d362a6ec808784f5044438",
+			"revisionTime": "2016-02-21T14:49:20-03:00"
 		},
 		{
 			"path": "github.com/tsuru/tsuru/git",
-			"revision": "e0e6e86e417165a44059835218dd74f0c08d4234",
-			"revisionTime": "2016-02-12T21:39:08-02:00"
+			"revision": "711ad55b00f25d5b55d362a6ec808784f5044438",
+			"revisionTime": "2016-02-21T14:49:20-03:00"
 		},
 		{
 			"path": "github.com/tsuru/tsuru/hc",
-			"revision": "e0e6e86e417165a44059835218dd74f0c08d4234",
-			"revisionTime": "2016-02-12T21:39:08-02:00"
+			"revision": "711ad55b00f25d5b55d362a6ec808784f5044438",
+			"revisionTime": "2016-02-21T14:49:20-03:00"
 		},
 		{
 			"path": "github.com/tsuru/tsuru/io",
-			"revision": "e0e6e86e417165a44059835218dd74f0c08d4234",
-			"revisionTime": "2016-02-12T21:39:08-02:00"
+			"revision": "711ad55b00f25d5b55d362a6ec808784f5044438",
+			"revisionTime": "2016-02-21T14:49:20-03:00"
 		},
 		{
 			"path": "github.com/tsuru/tsuru/log",
-			"revision": "e0e6e86e417165a44059835218dd74f0c08d4234",
-			"revisionTime": "2016-02-12T21:39:08-02:00"
+			"revision": "711ad55b00f25d5b55d362a6ec808784f5044438",
+			"revisionTime": "2016-02-21T14:49:20-03:00"
 		},
 		{
 			"path": "github.com/tsuru/tsuru/net",
-			"revision": "e0e6e86e417165a44059835218dd74f0c08d4234",
-			"revisionTime": "2016-02-12T21:39:08-02:00"
+			"revision": "711ad55b00f25d5b55d362a6ec808784f5044438",
+			"revisionTime": "2016-02-21T14:49:20-03:00"
 		},
 		{
 			"path": "github.com/tsuru/tsuru/permission",
-			"revision": "e0e6e86e417165a44059835218dd74f0c08d4234",
-			"revisionTime": "2016-02-12T21:39:08-02:00"
+			"revision": "711ad55b00f25d5b55d362a6ec808784f5044438",
+			"revisionTime": "2016-02-21T14:49:20-03:00"
 		},
 		{
 			"path": "github.com/tsuru/tsuru/quota",
-			"revision": "e0e6e86e417165a44059835218dd74f0c08d4234",
-			"revisionTime": "2016-02-12T21:39:08-02:00"
+			"revision": "711ad55b00f25d5b55d362a6ec808784f5044438",
+			"revisionTime": "2016-02-21T14:49:20-03:00"
 		},
 		{
 			"path": "github.com/tsuru/tsuru/repository",
-			"revision": "e0e6e86e417165a44059835218dd74f0c08d4234",
-			"revisionTime": "2016-02-12T21:39:08-02:00"
-		},
-		{
-			"path": "github.com/tsuru/tsuru/repository/repositorytest",
-			"revision": "e0e6e86e417165a44059835218dd74f0c08d4234",
-			"revisionTime": "2016-02-12T21:39:08-02:00"
-		},
-		{
-			"path": "github.com/tsuru/tsuru/safe",
-			"revision": "e0e6e86e417165a44059835218dd74f0c08d4234",
-			"revisionTime": "2016-02-12T21:39:08-02:00"
-		},
-		{
-			"path": "github.com/tsuru/tsuru/tsurutest",
-			"revision": "e0e6e86e417165a44059835218dd74f0c08d4234",
-			"revisionTime": "2016-02-12T21:39:08-02:00"
+			"revision": "711ad55b00f25d5b55d362a6ec808784f5044438",
+			"revisionTime": "2016-02-21T14:49:20-03:00"
 		},
 		{
 			"path": "github.com/tsuru/tsuru/validation",
-			"revision": "e0e6e86e417165a44059835218dd74f0c08d4234",
-			"revisionTime": "2016-02-12T21:39:08-02:00"
-		},
-		{
-			"path": "github.com/vbatts/tar-split/archive/tar",
-			"revision": "b87f81631a2b1cb185737b5bea76a7e9e8c29723",
-			"revisionTime": "2016-01-31T01:39:10-05:00"
-		},
-		{
-			"path": "github.com/vbatts/tar-split/tar/asm",
-			"revision": "b87f81631a2b1cb185737b5bea76a7e9e8c29723",
-			"revisionTime": "2016-01-31T01:39:10-05:00"
-		},
-		{
-			"path": "github.com/vbatts/tar-split/tar/storage",
-			"revision": "b87f81631a2b1cb185737b5bea76a7e9e8c29723",
-			"revisionTime": "2016-01-31T01:39:10-05:00"
+			"revision": "711ad55b00f25d5b55d362a6ec808784f5044438",
+			"revisionTime": "2016-02-21T14:49:20-03:00"
 		},
 		{
 			"origin": "github.com/tsuru/tsuru/vendor/golang.org/x/crypto/bcrypt",
 			"path": "golang.org/x/crypto/bcrypt",
-			"revision": "e0e6e86e417165a44059835218dd74f0c08d4234",
-			"revisionTime": "2016-02-12T21:39:08-02:00"
+			"revision": "711ad55b00f25d5b55d362a6ec808784f5044438",
+			"revisionTime": "2016-02-21T14:49:20-03:00"
 		},
 		{
 			"origin": "github.com/tsuru/tsuru/vendor/golang.org/x/crypto/blowfish",
 			"path": "golang.org/x/crypto/blowfish",
-			"revision": "e0e6e86e417165a44059835218dd74f0c08d4234",
-			"revisionTime": "2016-02-12T21:39:08-02:00"
+			"revision": "711ad55b00f25d5b55d362a6ec808784f5044438",
+			"revisionTime": "2016-02-21T14:49:20-03:00"
 		},
 		{
 			"origin": "github.com/docker/machine/vendor/golang.org/x/crypto/curve25519",
 			"path": "golang.org/x/crypto/curve25519",
-			"revision": "e27fb87286cb8e7454183ce46a6e1e84b31965e9",
-			"revisionTime": "2016-02-04T13:53:12-08:00"
+			"revision": "7cc7fbadcc4ba65dd2fde38d5fb6b301c6ce469b",
+			"revisionTime": "2016-02-19T16:52:47-08:00"
 		},
 		{
 			"origin": "github.com/docker/machine/vendor/golang.org/x/crypto/ssh",
 			"path": "golang.org/x/crypto/ssh",
-			"revision": "e27fb87286cb8e7454183ce46a6e1e84b31965e9",
-			"revisionTime": "2016-02-04T13:53:12-08:00"
+			"revision": "1f22c0103821b9390939b6776727195525381532",
+			"revisionTime": "2016-01-26T09:50:25-08:00"
 		},
 		{
-			"origin": "github.com/docker/machine/vendor/golang.org/x/crypto/ssh/terminal",
+			"origin": "github.com/andrewsmedina/yati/vendor/golang.org/x/crypto/ssh/terminal",
 			"path": "golang.org/x/crypto/ssh/terminal",
-			"revision": "e0e6e86e417165a44059835218dd74f0c08d4234",
-			"revisionTime": "2016-02-12T21:39:08-02:00"
-		},
-		{
-			"path": "golang.org/x/net/context",
-			"revision": "4f2fc6c1e69d41baf187332ee08fbd2b296f21ed",
-			"revisionTime": "2015-10-26T12:18:18+09:00"
-		},
-		{
-			"path": "golang.org/x/net/proxy",
-			"revision": "4f2fc6c1e69d41baf187332ee08fbd2b296f21ed",
-			"revisionTime": "2015-10-26T12:18:18+09:00"
+			"revision": "1f22c0103821b9390939b6776727195525381532",
+			"revisionTime": "2016-01-26T09:50:25-08:00"
 		},
 		{
 			"origin": "github.com/tsuru/tsuru/vendor/golang.org/x/net/websocket",
 			"path": "golang.org/x/net/websocket",
-			"revision": "e0e6e86e417165a44059835218dd74f0c08d4234",
-			"revisionTime": "2016-02-12T21:39:08-02:00"
+			"revision": "b6d7b1396ec874c3b00f6c84cd4301a17c56c8ed",
+			"revisionTime": "2016-02-16T22:16:06+09:00"
 		},
 		{
 			"origin": "github.com/docker/machine/vendor/golang.org/x/sys/windows/registry",
 			"path": "golang.org/x/sys/windows/registry",
-			"revision": "e27fb87286cb8e7454183ce46a6e1e84b31965e9",
-			"revisionTime": "2016-02-04T13:53:12-08:00"
+			"revision": "7cc7fbadcc4ba65dd2fde38d5fb6b301c6ce469b",
+			"revisionTime": "2016-02-19T16:52:47-08:00"
 		},
 		{
 			"path": "gopkg.in/check.v1",
-			"revision": "64131543e7896d5bcc6bd5a76287eb75ea96c673",
-			"revisionTime": "2014-10-24T11:38:53-02:00"
+			"revision": "4f90aeace3a26ad7021961c297b22c42160c7b25",
+			"revisionTime": "2016-01-05T14:49:36-02:00"
 		},
 		{
-			"path": "gopkg.in/fsnotify.v1",
-			"revision": "8611c35ab31c1c28aa903d33cf8b6e44a399b09e",
-			"revisionTime": "2016-01-10T16:04:37+01:00"
-		},
-		{
-			"origin": "github.com/tsuru/tsuru/vendor/gopkg.in/mgo.v2",
 			"path": "gopkg.in/mgo.v2",
-			"revision": "e0e6e86e417165a44059835218dd74f0c08d4234",
-			"revisionTime": "2016-02-12T21:39:08-02:00"
+			"revision": "d90005c5262a3463800497ea5a89aed5fe22c886",
+			"revisionTime": "2016-02-08T22:46:34-02:00"
 		},
 		{
-			"origin": "github.com/tsuru/tsuru/vendor/gopkg.in/mgo.v2/bson",
 			"path": "gopkg.in/mgo.v2/bson",
-			"revision": "e0e6e86e417165a44059835218dd74f0c08d4234",
-			"revisionTime": "2016-02-12T21:39:08-02:00"
+			"revision": "d90005c5262a3463800497ea5a89aed5fe22c886",
+			"revisionTime": "2016-02-08T22:46:34-02:00"
 		},
 		{
-			"origin": "github.com/tsuru/tsuru/vendor/gopkg.in/mgo.v2/internal/sasl",
-			"path": "gopkg.in/mgo.v2/internal/sasl",
-			"revision": "e0e6e86e417165a44059835218dd74f0c08d4234",
-			"revisionTime": "2016-02-12T21:39:08-02:00"
-		},
-		{
-			"origin": "github.com/tsuru/tsuru/vendor/gopkg.in/mgo.v2/internal/scram",
 			"path": "gopkg.in/mgo.v2/internal/scram",
-			"revision": "e0e6e86e417165a44059835218dd74f0c08d4234",
-			"revisionTime": "2016-02-12T21:39:08-02:00"
+			"revision": "d90005c5262a3463800497ea5a89aed5fe22c886",
+			"revisionTime": "2016-02-08T22:46:34-02:00"
 		},
 		{
 			"origin": "github.com/tsuru/tsuru/vendor/gopkg.in/yaml.v1",
 			"path": "gopkg.in/yaml.v1",
-			"revision": "e0e6e86e417165a44059835218dd74f0c08d4234",
-			"revisionTime": "2016-02-12T21:39:08-02:00"
-		},
-		{
-			"path": "launchpad.net/gnuflag",
-			"revision": "14",
-			"revisionTime": "2015-01-27T16:42:41Z"
+			"revision": "9f9df34309c04878acc86042b16630b0f696e1de",
+			"revisionTime": "2014-09-24T13:16:07-03:00"
 		}
 	]
 }
