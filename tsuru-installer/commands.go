@@ -42,6 +42,13 @@ func (c *install) Run(context *cmd.Context, client *cmd.Client) error {
 		return err
 	}
 	fmt.Println("MongoDB successfully installed!")
+	fmt.Println("Installing Redis")
+	err = createContainer(m.Address, m.Config["ca"], m.Config["cert"], m.Config["key"], "redis")
+	if err != nil {
+		fmt.Println("Error installing Redis!")
+		return err
+	}
+	fmt.Println("Redis successfully installed!")
 	return nil
 }
 
