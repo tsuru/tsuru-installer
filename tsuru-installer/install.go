@@ -5,11 +5,22 @@
 package main
 
 import (
+	"os"
+
 	"github.com/fsouza/go-dockerclient"
 )
 
 func createContainer(address, ca, cert, key, image string) error {
 	client, err := docker.NewClient(address)
+	if err != nil {
+		return err
+	}
+	pullOpts := docker.PullImageOptions{
+		Repository:   image,
+		OutputStream: os.Stdout,
+		Tag:          "latest",
+	}
+	err = client.PullImage(pullOpts, docker.AuthConfiguration{})
 	if err != nil {
 		return err
 	}
