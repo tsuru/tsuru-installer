@@ -9,7 +9,7 @@ import (
 )
 
 func createContainer(address, ca, cert, key, image string) error {
-	client, err := docker.NewTLSClient(address, cert, key, ca)
+	client, err := docker.NewClient(address)
 	if err != nil {
 		return err
 	}

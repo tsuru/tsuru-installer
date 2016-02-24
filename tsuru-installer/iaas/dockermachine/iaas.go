@@ -27,19 +27,18 @@ func (i *dmIaas) CreateMachine(params map[string]string) (*iaas.Machine, error) 
 	if err != nil {
 		return nil, err
 	}
+	host.HostOptions.EngineOptions.ArbitraryFlags = []string{
+		"host=tcp://0.0.0.0:2375",
+	}
+	host.HostOptions.EngineOptions.Env = []string{"DOCKER_TLS=no"}
 	err = client.Create(host)
 	ip, err := host.Driver.GetIP()
 	if err != nil {
 		return nil, err
 	}
-	options := host.AuthOptions()
-	config := map[string]string{
-		"ca":   options.CaCertPath,
-		"cert": options.ClientCertPath,
-		"key":  options.ClientKeyPath,
-	}
+	config := map[string]string{}
 	m := iaas.Machine{
-		Address: fmt.Sprintf("https://%s:2376", ip),
+		Address: fmt.Sprintf("http://%s:2375", ip),
 		Iaas:    "docker-machine",
 		Config:  config,
 	}
