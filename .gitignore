@@ -1,1 +1,2 @@
-tsuru/tsuru
+tsuru-installer/tsuru-installer
+*.pem
