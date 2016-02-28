@@ -36,21 +36,21 @@ func (c *install) Run(context *cmd.Context, client *cmd.Client) error {
 	}
 	fmt.Printf("Machine %s successfully created!\n", m.Address)
 	fmt.Println("Installing MongoDB")
-	err = createContainer(m.Address, m.Config["ca"], m.Config["cert"], m.Config["key"], "mongo")
+	err = createContainer(m.Address, "mongo")
 	if err != nil {
 		fmt.Println("Error installing MongoDB!")
 		return err
 	}
 	fmt.Println("MongoDB successfully installed!")
 	fmt.Println("Installing Redis")
-	err = createContainer(m.Address, m.Config["ca"], m.Config["cert"], m.Config["key"], "redis")
+	err = createContainer(m.Address, "redis")
 	if err != nil {
 		fmt.Println("Error installing Redis!")
 		return err
 	}
 	fmt.Println("Redis successfully installed!")
 	fmt.Println("Installing Docker Registry")
-	err = createContainer(m.Address, m.Config["ca"], m.Config["cert"], m.Config["key"], "registry")
+	err = createContainer(m.Address, "registry")
 	if err != nil {
 		fmt.Println("Error installing Docker Registry!")
 		return err
