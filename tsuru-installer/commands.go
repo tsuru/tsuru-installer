@@ -49,6 +49,13 @@ func (c *install) Run(context *cmd.Context, client *cmd.Client) error {
 		return err
 	}
 	fmt.Println("Redis successfully installed!")
+	fmt.Println("Installing Docker Registry")
+	err = createContainer(m.Address, m.Config["ca"], m.Config["cert"], m.Config["key"], "registry")
+	if err != nil {
+		fmt.Println("Error installing Docker Registry!")
+		return err
+	}
+	fmt.Println("Docker Registry successfully installed!")
 	return nil
 }
 
