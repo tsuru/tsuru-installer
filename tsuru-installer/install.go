@@ -28,7 +28,7 @@ func createContainer(address, image string, env []string) error {
 	if err != nil {
 		return err
 	}
-	hostConfig := &docker.HostConfig{}
+	hostConfig := &docker.HostConfig{RestartPolicy: docker.AlwaysRestart()}
 	if len(imageInspect.Config.ExposedPorts) > 0 {
 		hostConfig.PortBindings = make(map[docker.Port][]docker.PortBinding)
 		for k := range imageInspect.Config.ExposedPorts {
