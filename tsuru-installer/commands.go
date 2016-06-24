@@ -36,26 +36,38 @@ func (c *install) Run(context *cmd.Context, client *cmd.Client) error {
 	}
 	fmt.Printf("Machine %s successfully created!\n", m.Address)
 	fmt.Println("Installing MongoDB")
-	err = createContainer(m.Address, "mongo")
+	err = createContainer(m.Address, "mongo", []string{})
 	if err != nil {
 		fmt.Println("Error installing MongoDB!")
 		return err
 	}
 	fmt.Println("MongoDB successfully installed!")
 	fmt.Println("Installing Redis")
-	err = createContainer(m.Address, "redis")
+	err = createContainer(m.Address, "redis", []string{})
 	if err != nil {
 		fmt.Println("Error installing Redis!")
 		return err
 	}
 	fmt.Println("Redis successfully installed!")
 	fmt.Println("Installing Docker Registry")
-	err = createContainer(m.Address, "registry")
+	err = createContainer(m.Address, "registry", []string{})
 	if err != nil {
 		fmt.Println("Error installing Docker Registry!")
 		return err
 	}
 	fmt.Println("Docker Registry successfully installed!")
+	env := []string{fmt.Sprintf("MONGODB_ADDR=%s", m.IP),
+		"MONGODB_PORT=27017",
+		fmt.Sprintf("REDIS_ADDR=%s", m.IP),
+		"REDIS_PORT=6379",
+	}
+	err = createContainer(m.Address, "tsuru/api", env)
+	fmt.Println("Installing Tsuru API")
+	if err != nil {
+		fmt.Println("Error installing Tsuru API!")
+		return err
+	}
+	fmt.Println("Tsuru API successfully installed!")
 	return nil
 }
 

@@ -13,6 +13,7 @@ func Get(name string) Iaas {
 type Machine struct {
 	Iaas    string
 	Address string
+	IP      string
 	Config  map[string]string
 }
 

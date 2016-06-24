@@ -40,6 +40,7 @@ func (i *dmIaas) CreateMachine(params map[string]string) (*iaas.Machine, error) 
 	m := iaas.Machine{
 		Address: fmt.Sprintf("http://%s:2375", ip),
 		Iaas:    "docker-machine",
+		IP:      ip,
 		Config:  config,
 	}
 	return &m, nil
