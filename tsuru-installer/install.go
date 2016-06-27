@@ -10,13 +10,13 @@ import (
 	"github.com/fsouza/go-dockerclient"
 )
 
-func createContainer(address, image string, env []string) error {
+func createContainer(address string, config docker.Config) error {
 	client, err := docker.NewClient(address)
 	if err != nil {
 		return err
 	}
 	pullOpts := docker.PullImageOptions{
-		Repository:   image,
+		Repository:   config.Image,
 		OutputStream: os.Stdout,
 		Tag:          "latest",
 	}
@@ -24,7 +24,7 @@ func createContainer(address, image string, env []string) error {
 	if err != nil {
 		return err
 	}
-	imageInspect, err := client.InspectImage(image)
+	imageInspect, err := client.InspectImage(config.Image)
 	if err != nil {
 		return err
 	}
@@ -35,11 +35,10 @@ func createContainer(address, image string, env []string) error {
 			hostConfig.PortBindings[k] = []docker.PortBinding{{HostIP: "0.0.0.0", HostPort: k.Port()}}
 		}
 	}
-	config := docker.Config{Image: image, Env: env}
-	opts := docker.CreateContainerOptions{Config: &config}
+	opts := docker.CreateContainerOptions{Config: &config, HostConfig: hostConfig}
 	container, err := client.CreateContainer(opts)
 	if err != nil {
 		return err
 	}
-	return client.StartContainer(container.ID, hostConfig)
+	return client.StartContainer(container.ID, nil)
 }
