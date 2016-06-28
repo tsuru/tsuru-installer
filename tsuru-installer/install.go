@@ -6,19 +6,24 @@ package main
 
 import (
 	"os"
+	"strings"
 
 	"github.com/fsouza/go-dockerclient"
 )
 
-func createContainer(address, name string, config *docker.Config) error {
+func createContainer(address, name string, config *docker.Config, hostConfig *docker.HostConfig) error {
 	client, err := docker.NewClient(address)
 	if err != nil {
 		return err
 	}
+	tag := "latest"
+	if strings.Contains(config.Image, ":") {
+		tag = strings.Split(config.Image, ":")[1]
+	}
 	pullOpts := docker.PullImageOptions{
 		Repository:   config.Image,
 		OutputStream: os.Stdout,
-		Tag:          "latest",
+		Tag:          tag,
 	}
 	err = client.PullImage(pullOpts, docker.AuthConfiguration{})
 	if err != nil {
@@ -28,7 +33,10 @@ func createContainer(address, name string, config *docker.Config) error {
 	if err != nil {
 		return err
 	}
-	hostConfig := &docker.HostConfig{RestartPolicy: docker.AlwaysRestart()}
+	if hostConfig == nil {
+		hostConfig = &docker.HostConfig{}
+	}
+	hostConfig.RestartPolicy = docker.AlwaysRestart()
 	if len(imageInspect.Config.ExposedPorts) > 0 {
 		hostConfig.PortBindings = make(map[docker.Port][]docker.PortBinding)
 		for k := range imageInspect.Config.ExposedPorts {

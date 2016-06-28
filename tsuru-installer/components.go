@@ -31,7 +31,7 @@ func (c *MongoDB) Name() string {
 }
 
 func (c *MongoDB) Install(machine *iaas.Machine) error {
-	return createContainer(machine.Address, "mongo", &docker.Config{Image: "mongo"})
+	return createContainer(machine.Address, "mongo", &docker.Config{Image: "mongo"}, nil)
 }
 
 type PlanB struct{}
@@ -45,7 +45,7 @@ func (c *PlanB) Install(machine *iaas.Machine) error {
 		Image: "tsuru/planb",
 		Cmd:   []string{"--listen", ":80", "--read-redis-host", machine.IP, "--write-redis-host", machine.IP},
 	}
-	return createContainer(machine.Address, "planb", config)
+	return createContainer(machine.Address, "planb", config, nil)
 }
 
 type Redis struct{}
@@ -55,7 +55,7 @@ func (c *Redis) Name() string {
 }
 
 func (c *Redis) Install(machine *iaas.Machine) error {
-	return createContainer(machine.Address, "redis", &docker.Config{Image: "redis"})
+	return createContainer(machine.Address, "redis", &docker.Config{Image: "redis"}, nil)
 }
 
 type Registry struct{}
@@ -65,7 +65,14 @@ func (c *Registry) Name() string {
 }
 
 func (c *Registry) Install(machine *iaas.Machine) error {
-	return createContainer(machine.Address, "registry", &docker.Config{Image: "registry"})
+	config := &docker.Config{
+		Image: "registry:2",
+		Env:   []string{"REGISTRY_STORAGE_FILESYSTEM_ROOTDIRECTORY=/var/lib/registry"},
+	}
+	hostConfig := &docker.HostConfig{
+		Binds: []string{"/var/lib/registry:/var/lib/registry"},
+	}
+	return createContainer(machine.Address, "registry", config, hostConfig)
 }
 
 type TsuruAPI struct{}
@@ -84,5 +91,5 @@ func (c *TsuruAPI) Install(machine *iaas.Machine) error {
 		Image: "tsuru/api",
 		Env:   env,
 	}
-	return createContainer(machine.Address, "tsuru", config)
+	return createContainer(machine.Address, "tsuru", config, nil)
 }
