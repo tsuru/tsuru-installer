@@ -10,7 +10,7 @@ import (
 	"github.com/fsouza/go-dockerclient"
 )
 
-func createContainer(address string, config docker.Config) error {
+func createContainer(address, name string, config *docker.Config) error {
 	client, err := docker.NewClient(address)
 	if err != nil {
 		return err
@@ -35,7 +35,7 @@ func createContainer(address string, config docker.Config) error {
 			hostConfig.PortBindings[k] = []docker.PortBinding{{HostIP: "0.0.0.0", HostPort: k.Port()}}
 		}
 	}
-	opts := docker.CreateContainerOptions{Config: &config, HostConfig: hostConfig}
+	opts := docker.CreateContainerOptions{Config: config, HostConfig: hostConfig, Name: name}
 	container, err := client.CreateContainer(opts)
 	if err != nil {
 		return err

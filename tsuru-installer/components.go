@@ -31,7 +31,7 @@ func (c *MongoDB) Name() string {
 }
 
 func (c *MongoDB) Install(machine *iaas.Machine) error {
-	return createContainer(machine.Address, docker.Config{Image: "mongo"})
+	return createContainer(machine.Address, "mongo", &docker.Config{Image: "mongo"})
 }
 
 type PlanB struct{}
@@ -41,11 +41,11 @@ func (c *PlanB) Name() string {
 }
 
 func (c *PlanB) Install(machine *iaas.Machine) error {
-	config := docker.Config{
+	config := &docker.Config{
 		Image: "tsuru/planb",
 		Cmd:   []string{"--listen", ":80", "--read-redis-host", machine.IP, "--write-redis-host", machine.IP},
 	}
-	return createContainer(machine.Address, config)
+	return createContainer(machine.Address, "planb", config)
 }
 
 type Redis struct{}
@@ -55,7 +55,7 @@ func (c *Redis) Name() string {
 }
 
 func (c *Redis) Install(machine *iaas.Machine) error {
-	return createContainer(machine.Address, docker.Config{Image: "redis"})
+	return createContainer(machine.Address, "redis", &docker.Config{Image: "redis"})
 }
 
 type Registry struct{}
@@ -65,7 +65,7 @@ func (c *Registry) Name() string {
 }
 
 func (c *Registry) Install(machine *iaas.Machine) error {
-	return createContainer(machine.Address, docker.Config{Image: "registry"})
+	return createContainer(machine.Address, "registry", &docker.Config{Image: "registry"})
 }
 
 type TsuruAPI struct{}
@@ -80,9 +80,9 @@ func (c *TsuruAPI) Install(machine *iaas.Machine) error {
 		fmt.Sprintf("REDIS_ADDR=%s", machine.IP),
 		"REDIS_PORT=6379",
 	}
-	config := docker.Config{
+	config := &docker.Config{
 		Image: "tsuru/api",
 		Env:   env,
 	}
-	return createContainer(machine.Address, config)
+	return createContainer(machine.Address, "tsuru", config)
 }
