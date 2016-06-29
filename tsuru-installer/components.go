@@ -98,10 +98,10 @@ func (c *TsuruAPI) Install(machine *iaas.Machine) error {
 	if err != nil {
 		return err
 	}
-	return c.setupRootUser()
+	return c.setupRootUser(fmt.Sprintf("%s:2375", machine.IP))
 }
 
-func (c *TsuruAPI) setupRootUser() error {
+func (c *TsuruAPI) setupRootUser(address string) error {
 	cmd := []string{"tsurud", "root-user-create", "admin@example.com"}
 	passwordConfirmation := strings.NewReader("admin123\nadmin123\n")
 	client, err := docker.NewClient(address)
@@ -119,7 +119,7 @@ func (c *TsuruAPI) setupRootUser() error {
 		return err
 	}
 	return client.StartExec(exec.ID, docker.StartExecOptions{
-		InputStream:  inputStream,
+		InputStream:  passwordConfirmation,
 		Detach:       false,
 		OutputStream: os.Stdout,
 		ErrorStream:  os.Stderr,
