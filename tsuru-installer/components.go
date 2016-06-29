@@ -6,6 +6,8 @@ package main
 
 import (
 	"fmt"
+	"os"
+	"strings"
 
 	"github.com/fsouza/go-dockerclient"
 	"github.com/tsuru/tsuru-installer/tsuru-installer/iaas"
@@ -91,5 +93,35 @@ func (c *TsuruAPI) Install(machine *iaas.Machine) error {
 		Image: "tsuru/api",
 		Env:   env,
 	}
-	return createContainer(machine.Address, "tsuru", config, nil)
+	err := createContainer(machine.Address, "tsuru", config, nil)
+	if err != nil {
+		return err
+	}
+	return c.setupRootUser()
+}
+
+func (c *TsuruAPI) setupRootUser() error {
+	cmd := []string{"tsurud", "root-user-create", "admin@example.com"}
+	passwordConfirmation := strings.NewReader("admin123\nadmin123\n")
+	client, err := docker.NewClient(address)
+	if err != nil {
+		return err
+	}
+	exec, err := client.CreateExec(docker.CreateExecOptions{
+		Cmd:          cmd,
+		Container:    "tsuru",
+		AttachStdout: true,
+		AttachStderr: true,
+		AttachStdin:  true,
+	})
+	if err != nil {
+		return err
+	}
+	return client.StartExec(exec.ID, docker.StartExecOptions{
+		InputStream:  inputStream,
+		Detach:       false,
+		OutputStream: os.Stdout,
+		ErrorStream:  os.Stderr,
+		RawTerminal:  true,
+	})
 }
