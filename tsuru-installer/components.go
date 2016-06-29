@@ -88,6 +88,7 @@ func (c *TsuruAPI) Install(machine *iaas.Machine) error {
 		"MONGODB_PORT=27017",
 		fmt.Sprintf("REDIS_ADDR=%s", machine.IP),
 		"REDIS_PORT=6379",
+		fmt.Sprintf("HIPACHE_DOMAIN=%s.nip.io", machine.IP),
 	}
 	config := &docker.Config{
 		Image: "tsuru/api",
