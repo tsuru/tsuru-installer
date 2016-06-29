@@ -98,7 +98,7 @@ func (c *TsuruAPI) Install(machine *iaas.Machine) error {
 	if err != nil {
 		return err
 	}
-	return c.setupRootUser(fmt.Sprintf("%s:2375", machine.IP))
+	return c.setupRootUser(machine.Address)
 }
 
 func (c *TsuruAPI) setupRootUser(address string) error {
